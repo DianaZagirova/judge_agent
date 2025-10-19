@@ -1,0 +1,51 @@
+Map the {num_papers} aging theories to standardized theory names, or identify new theories.
+
+#CRITICAL: You MUST provide EXACTLY {num_papers} results in the EXACT same order as the numbered list below. Do not skip any entry.
+
+#LEARNING MODE - FLEXIBLE RULES:
+1. For EACH numbered theory (1 through {num_papers}), provide a result in the exact same order
+2. Copy the EXACT theory text as "initial_theory_name" - do not rephrase or modify it  
+3. You can map to 1 or multiple theories if the text mentions multiple concepts
+4. For each match, provide a confidence score (1-10): how certain you are
+5. If theory text is complete nonsense/unintelligible, output null for it
+6. If the theory doesn't match any standardized theory well (confidence < 6), prefix with "NEW_" and provide a clean theory name
+7. For NEW_ theories, also provide 5-10 relevant keywords that describe this theory
+8. MAINTAIN ORDER: Result position must match input position (entry 1 → result 1, entry 2 → result 2, etc.)
+
+#Initial theories to map (process in order):     
+{theories_input}
+
+#Available standardized names:
+{theories_list}
+
+#Output Format (JSON only, no markdown):
+#IMPORTANT: Return EXACTLY {num_papers} entries in the results array, in the same order as above.
+{
+  "results": [
+    {
+      "initial_theory_name": "free radical theory",
+      "mapped_names": ["Free Radical/Oxidative Stress Theory"],
+      "confidence": [9],
+      "keywords": []
+    },
+    {
+      "initial_theory_name": "mitochondrial and telomere theory",
+      "mapped_names": ["Mitochondrial Decline Theory (MFRTA)", "Replicative Senescence/Telomere Theory"],
+      "confidence": [9, 9],
+      "keywords": []
+    },
+    {
+      "initial_theory_name": "very vague complete nonsense concept",
+      "mapped_names": null,
+      "confidence": null,
+      "keywords": []
+    },
+    {
+      "initial_theory_name": "quantum theory of aging of human",
+      "mapped_names": ["NEW_Quantum Theory"],
+      "confidence": [5],
+      "keywords": ["quantum mechanics", "aging", "quantum biology", "coherence", "entanglement"]
+    }
+  ]
+}
+#Answer:

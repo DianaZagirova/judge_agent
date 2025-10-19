@@ -1,0 +1,64 @@
+# Virtual environment
+venv/
+env/
+
+#keys
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# System files
+.DS_Store
+*.DS_Store
+
+# Downloaded papers and output
+papers/*.pdf
+output/*.json
+output/*.xml
+
+# Log files
+logs/*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.bak
+
+#Outputs
+papers_missing/
+papers/
+pdfs/
+logs/
+documentation/
+
+**.ipynb
+working_test.ipynb
+
+##temp
+legacy/
+extra_logs/
+
+#tracker db
+processing_tracker.db**
+/missing_dois/
+/pending_dois/
+
+/trackers/backup/
+
+
+#main data
+evaluations.db
+data/
+
+#test results
+output/
+normalization_output/

@@ -1,0 +1,3007 @@
+{
+  "batch_number": 11,
+  "total_batches": 11,
+  "papers_processed": 417,
+  "new_theories_added": 116,
+  "ontology_size": 173,
+  "timestamp": "2025-10-15T15:41:13.001171",
+  "ontology": [
+    {
+      "Theory Category": "Evolutionary Foundations",
+      "Sub-Category": "Non-Adaptive (Byproduct)",
+      "Theory Name": "Mutation Accumulation Theory",
+      "Main Concepts": "- Declining force of natural selection with age\n- \"Selection shadow\" in post-reproductive life\n- Accumulation of late-acting deleterious mutations\n- Aging as a collection of late-onset genetic disorders",
+      "Seed Keyword List": [
+        "mutation accumulation",
+        "deleterious mutations",
+        "late-acting",
+        "late-onset",
+        "selection shadow",
+        "harmful genes",
+        "detrimental effects",
+        "post-reproductive",
+        "postreproductive",
+        "late-life",
+        "declining selection",
+        "medawar",
+        "hamilton",
+        "selection pressure",
+        "evolutionary",
+        "non-adaptive",
+        "byproduct",
+        "inbreeding depression",
+        "genetic variance"
+      ],
+      "": [
+        "mutation accumulation",
+        "late-acting deleterious mutations",
+        "selection shadow",
+        "declining force of natural selection",
+        "selectively neutral",
+        "post-reproductive senescence",
+        "medawar",
+        "hamilton's rule",
+        "age-specific mortality",
+        "inbreeding depression"
+      ],
+      "__1": "((\"mutation accumulation\"[tiab]) AND (\"selection shadow\"[tiab] OR \"late-acting\"[tiab] OR medawar[au])) AND (\"Aging\"[Mesh] OR \"Senescence\"[Mesh])",
+      "__2": "(\"mutation accumulation\"[tiab] OR \"selection shadow\"[tiab] OR \"late-acting\"[tiab] OR medawar[au]) AND (aging[tiab] OR ageing[tiab] OR Aging[MeSH] OR Geriatrics[MeSH] OR \"Cellular Senescence\"[Majr] OR \"Aging/physiology\"[Majr])",
+      "__3": 64
+    },
+    {
+      "Theory Category": "Evolutionary Foundations",
+      "Sub-Category": "Non-Adaptive (Byproduct)",
+      "Theory Name": "Antagonistic Pleiotropy Theory",
+      "Main Concepts": "- A single gene influences multiple traits (pleiotropy)\n- Genes can have beneficial effects early in life and detrimental effects late in life\n- Natural selection favors genes with early-life benefits\n- Aging is the unselected late-life cost of early-life fitness\n- Evolutionary trade-off between reproduction and longevity",
+      "Seed Keyword List": [
+        "antagonistic pleiotropy",
+        "pleiotropic genes",
+        "pleiotropy",
+        "early beneficial effects",
+        "late deleterious effects",
+        "early-life benefits",
+        "late-life disadvantage",
+        "evolutionary trade-off",
+        "genetic trade-off",
+        "cost of reproduction",
+        "early life fertility",
+        "george c williams",
+        "williams gc",
+        "medawar",
+        "declining selection",
+        "post-reproductive",
+        "non-adaptive",
+        "byproduct",
+        "daf-2",
+        "age-1",
+        "clk-1",
+        "spata31"
+      ],
+      "": [
+        "antagonistic pleiotropy",
+        "pleiotropic gene",
+        "evolutionary trade-off",
+        "early-life fitness benefit",
+        "late-life cost",
+        "cost of reproduction",
+        "george c williams",
+        "fecundity vs longevity",
+        "early fecundity",
+        "age-1",
+        "daf-2"
+      ],
+      "__1": "((\"antagonistic pleiotropy\"[tiab]) OR (\"pleiotropic gene*\"[tiab] AND \"trade-off\"[tiab])) AND (\"Aging\"[Mesh] OR \"Senescence\"[Mesh] OR \"Longevity\"[Mesh])",
+      "__2": "(pleiotrop*[tiab]) AND (aging[tiab] OR ageing[tiab] OR Aging[MeSH] OR Geriatrics[MeSH] OR \"Cellular Senescence\"[Majr] OR \"Aging/physiology\"[Majr])",
+      "__3": 616
+    },
+    {
+      "Theory Category": "Evolutionary Foundations",
+      "Sub-Category": "Non-Adaptive (Byproduct)",
+      "Theory Name": "Disposable Soma Theory",
+      "Main Concepts": "- Organisms have limited resources for reproduction vs. somatic maintenance\n- Prioritizing reproduction over perfect repair is evolutionarily optimal due to extrinsic mortality\n- The soma (body) is \"disposable\" after reproduction\n- Aging is the accumulation of unrepaired somatic damage",
+      "Seed Keyword List": [
+        "disposable soma",
+        "somatic maintenance",
+        "somatic repair",
+        "resource allocation",
+        "energy allocation",
+        "trade-off",
+        "investment in offspring",
+        "unrepaired somatic damage",
+        "molecular proofreading",
+        "germ-soma",
+        "thomas kirkwood",
+        "kirkwood tb",
+        "robin holliday",
+        "extrinsic mortality",
+        "non-adaptive",
+        "byproduct",
+        "calorie restriction",
+        "tor pathway",
+        "igf-1"
+      ],
+      "": [
+        "disposable soma theory",
+        "somatic maintenance and repair",
+        "resource allocation trade-off",
+        "germline immortality",
+        "soma disposability",
+        "extrinsic mortality",
+        "thomas kirkwood",
+        "energy allocation",
+        "investment in reproduction"
+      ],
+      "__1": "((\"disposable soma\"[tiab]) AND (\"somatic maintenance\"[tiab] OR \"resource allocation\"[tiab] OR kirkwood[au])) AND (\"Aging\"[Mesh] OR \"Senescence\"[Mesh])",
+      "__2": "(soma[tiab] AND \"somatic maintenance\"[tiab] OR kirkwood[au]) AND (aging[tiab] OR ageing[tiab] OR Aging[MeSH] OR Geriatrics[MeSH] OR \"Cellular Senescence\"[Majr] OR \"Aging/physiology\"[Majr])",
+      "__3": 66
+    },
+    {
+      "Theory Category": "Evolutionary Foundations",
+      "Sub-Category": "Adaptive/Programmed",
+      "Theory Name": "Phenoptosis (Group Selection)",
+      "Main Concepts": "- Aging as programmed organismal death (analogous to apoptosis)\n- Genetically determined and regulated biological function\n- Proposed to be adaptive at the group/species level\n- Frees resources and accelerates evolution",
+      "Seed Keyword List": [
+        "phenoptosis",
+        "programmed death",
+        "organismal death",
+        "adaptive death",
+        "altruistic aging",
+        "genetically determined",
+        "supra-individual selection",
+        "group selection",
+        "multilevel selection",
+        "good of the species",
+        "v c wynne-edwards",
+        "e o wilson",
+        "martin nowak",
+        "giacinto libertini",
+        "adaptive",
+        "programmed"
+      ],
+      "": [
+        "phenoptosis",
+        "programmed organismal death",
+        "adaptive aging",
+        "group selection",
+        "kin selection",
+        "altruistic suicide",
+        "supra-individual selection",
+        "good of the species",
+        "vladimir skubachev",
+        "giacinto libertini"
+      ],
+      "__1": "(phenoptosis[tiab] OR (\"programmed death\"[tiab] AND (\"group selection\"[tiab] OR \"kin selection\"[tiab]))) AND (\"Aging\"[Mesh] OR \"Senescence\"[Mesh])",
+      "__2": "(phenoptosis[tiab] OR \"programmed death\"[tiab] OR \"group selection\"[tiab] OR \"kin selection\"[tiab]) AND (aging[tiab] OR ageing[tiab] OR Aging[MeSH] OR Geriatrics[MeSH] OR \"Cellular Senescence\"[Majr] OR \"Aging/physiology\"[Majr])",
+      "__3": 83
+    },
+    {
+      "Theory Category": "Evolutionary Foundations",
+      "Sub-Category": "Adaptive/Programmed",
+      "Theory Name": "Evolvable Soma Theory",
+      "Main Concepts": "- Aging is the result of evolutionary \"experiments\" in the post-reproductive soma\n- Most experiments are harmful (aging), but some are beneficial for future adaptation\n- The soma is \"evolvable,\" not \"disposable\"\n- Aging enhances a species' evolvability",
+      "Seed Keyword List": [
+        "evolvable soma",
+        "post-reproductive experiments",
+        "evolvability",
+        "somatic evolution",
+        "adaptive aging",
+        "programmed",
+        "long-term adaptation"
+      ],
+      "": [
+        "evolvable soma",
+        "somatic evolvability",
+        "post-reproductive evolution",
+        "adaptive aging",
+        "long-term adaptation",
+        "species evolvability",
+        "somatic experiments"
+      ],
+      "__1": "(\"evolvable soma\"[tiab] AND (aging[tiab] OR evolution*[tiab])) AND (\"Aging\"[Mesh] OR \"Senescence\"[Mesh])",
+      "__2": "(\"soma\"[tiab] ) AND (aging[tiab] OR ageing[tiab] OR Aging[MeSH] OR Geriatrics[MeSH] OR \"Cellular Senescence\"[Majr] OR \"Aging/physiology\"[Majr])",
+      "__3": 124
+    },
+    {
+      "Theory Category": "Evolutionary Foundations",
+      "Sub-Category": "Adaptive/Programmed",
+      "Theory Name": "Pathogen Control Theory",
+      "Main Concepts": "Aging is an evolved, adaptive process that serves as a primitive immune strategy to control the spread of infectious diseases.\nIt proposes that a restricted lifespan is selected for to remove older individuals from a population, as they are more likely to have accumulated a high burden of chronic pathogens.\nThis removal protects younger, healthier relatives from infection, thereby increasing the inclusive fitness of the lineage through kin selection.\nProgrammed lifespan termination is proposed as an evolutionarily stable strategy when the cost of transmitting infections to kin outweighs the benefit of a longer individual life.",
+      "Seed Keyword List": [
+        "pathogen control",
+        "pathogen burden",
+        "infectious diseases",
+        "chronic infections",
+        "kin selection",
+        "inclusive fitness",
+        "shorter lifespan",
+        "lifespan restriction",
+        "adaptive aging",
+        "programmed",
+        "evolutionary",
+        "immune strategy"
+      ],
+      "": [
+        "pathogen control hypothesis",
+        "pathogen burden",
+        "host-pathogen coevolution",
+        "adaptive death",
+        "kin selection",
+        "inclusive fitness",
+        "infection avoidance",
+        "parasite load",
+        "lifespan restriction",
+        "primitive immune strategy"
+      ],
+      "__1": "((\"pathogen control\"[tiab] OR \"pathogen burden\"[tiab]) AND (\"lifespan\"[tiab] OR \"longevity\"[tiab]) AND evolution*[tiab]) AND (\"Aging\"[Mesh] OR \"Senescence\"[Mesh])",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Evolutionary Foundations",
+      "Sub-Category": "Byproduct/Constraint",
+      "Theory Name": "Aging as a Spandrel",
+      "Main Concepts": "- A non-adaptive byproduct of another selected characteristic\n- Aging is an unavoidable consequence of complex developmental programs\n- A theory of architectural constraint, not a trade-off",
+      "Seed Keyword List": [
+        "spandrel",
+        "evolutionary spandrel",
+        "architectural constraint",
+        "developmental constraint",
+        "non-adaptive byproduct",
+        "unavoidable consequence",
+        "stephen jay gould",
+        "richard lewontin",
+        "developmental programs",
+        "byproduct"
+      ],
+      "": [
+        "spandrel of evolution",
+        "evolutionary spandrel",
+        "architectural constraint",
+        "developmental constraint",
+        "non-adaptive byproduct",
+        "unavoidable consequence",
+        "stephen jay gould",
+        "richard lewontin",
+        "developmental programs"
+      ],
+      "__1": "((\"spandrel\"[tiab] OR \"architectural constraint\"[tiab]) AND (aging[tiab] OR evolution*[tiab])) AND (\"Aging\"[Mesh] OR \"Senescence\"[Mesh])",
+      "__2": "(\"spandrel\"[tiab]) AND (aging[tiab] OR ageing[tiab] OR Aging[MeSH] OR Geriatrics[MeSH] OR \"Cellular Senescence\"[Majr] OR \"Aging/physiology\"[Majr])",
+      "__3": 1
+    },
+    {
+      "Theory Category": "Evolutionary Foundations",
+      "Sub-Category": "Modern Refinements",
+      "Theory Name": "Intergenerational Transfers Theory",
+      "Main Concepts": "- Society is structured by resource flows between age groups\n- The force of selection depends on remaining fertility and net transfers\n- The \"transfer effect\" maintains selective pressure for post-reproductive survival",
+      "Seed Keyword List": [
+        "intergenerational transfers",
+        "transfer effect",
+        "post-reproductive survival",
+        "inclusive fitness",
+        "resource flows",
+        "net transfers",
+        "ronald lee",
+        "hamilton's rule"
+      ],
+      "": [
+        "intergenerational transfers",
+        "transfer effect",
+        "post-reproductive survival",
+        "inclusive fitness",
+        "resource flows",
+        "net transfers",
+        "ronald lee",
+        "hamilton's rule",
+        "kin support"
+      ],
+      "__1": "((\"intergenerational transfer*\"[tiab]) AND (\"post-reproductive\"[tiab] OR \"inclusive fitness\"[tiab] OR \"grandmother hypothesis\"[tiab])) AND (\"Aging\"[Mesh] OR \"Longevity\"[Mesh])",
+      "__2": "(\"intergenerational transfer*\"[tiab] OR \"inclusive fitness\"[tiab] OR \"grandmother hypothesis\"[tiab]) AND (aging[tiab] OR ageing[tiab] OR Aging[MeSH] OR Geriatrics[MeSH] OR \"Cellular Senescence\"[Majr] OR \"Aging/physiology\"[Majr])",
+      "__3": 23
+    },
+    {
+      "Theory Category": "Evolutionary Foundations",
+      "Sub-Category": "Modern Refinements",
+      "Theory Name": "Danaid Theory",
+      "Main Concepts": "- Aging is caused by declining selection and inherent constraints on repair\n- Organisms are fundamentally \"unmaintainable\"\n- Constraints include information loss and diminishing returns on repair",
+      "Seed Keyword List": [
+        "danaid theory",
+        "unmaintainable",
+        "constraints on repair",
+        "information loss",
+        "diminishing returns",
+        "somatic decay",
+        "declining selection"
+      ],
+      "": [
+        "danaid theory",
+        "unmaintainable soma",
+        "constraints on repair",
+        "somatic decay",
+        "information loss",
+        "diminishing returns on repair",
+        "fundamental constraints"
+      ],
+      "__1": "(\"danaid theory\"[tiab] AND (aging[tiab] OR senescence[tiab] OR \"somatic decay\"[tiab]))",
+      "__2": "(\"danaid\"[tiab] ) AND (aging[tiab] OR ageing[tiab] OR Aging[MeSH] OR Geriatrics[MeSH] OR \"Cellular Senescence\"[Majr] OR \"Aging/physiology\"[Majr])",
+      "__3": 1
+    },
+    {
+      "Theory Category": "Evolutionary Foundations",
+      "Sub-Category": "Modern Refinements",
+      "Theory Name": "Grandmother Hypothesis",
+      "Main Concepts": "- Explains long post-reproductive lifespan in human females (menopause)\n- Post-menopausal women increase inclusive fitness by helping kin\n- Grandmotherly assistance increases grandchildren's survival",
+      "Seed Keyword List": [
+        "grandmother hypothesis",
+        "post-reproductive lifespan",
+        "menopause",
+        "inclusive fitness",
+        "kin selection",
+        "grandmotherly assistance",
+        "alloparenting",
+        "kristen hawkes",
+        "intergenerational transfers"
+      ],
+      "": [
+        "grandmother hypothesis",
+        "post-reproductive lifespan",
+        "menopause",
+        "inclusive fitness",
+        "kin selection",
+        "alloparenting",
+        "grandmotherly assistance",
+        "kristen hawkes",
+        "intergenerational transfers"
+      ],
+      "__1": "(\"grandmother hypothesis\"[tiab]) AND (\"menopause\"[tiab] OR \"post-reproductive\"[tiab] OR \"inclusive fitness\"[tiab])",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Mechanistic Theories",
+      "Sub-Category": "Molecular Damage",
+      "Theory Name": "Free Radical/Oxidative Stress Theory",
+      "Main Concepts": "- Reactive oxygen species (ROS) are byproducts of metabolism\n- ROS cause cumulative oxidative damage to macromolecules\n- This damage leads to cellular dysfunction and aging",
+      "Seed Keyword List": [
+        "free radical theory",
+        "oxidative stress",
+        "oxidative damage",
+        "reactive oxygen species",
+        "ros",
+        "free radicals",
+        "oxidants",
+        "antioxidants",
+        "lipid peroxidation",
+        "denham harman",
+        "mitochondria",
+        "metabolism",
+        "macromolecular damage"
+      ],
+      "": [
+        "free radical theory",
+        "oxidative stress",
+        "oxidative damage",
+        "reactive oxygen species",
+        "ros",
+        "free radicals",
+        "oxidants",
+        "antioxidants",
+        "lipid peroxidation",
+        "denham harman",
+        "mitochondria",
+        "metabolism",
+        "macromolecular damage"
+      ],
+      "__1": "((\"free radical theory\"[tiab] OR \"oxidative stress\"[tiab]) AND (ROS[tiab] OR \"reactive oxygen species\"[tiab] OR harman[au])) AND (\"Aging\"[Mesh] OR \"Senescence\"[Mesh])",
+      "__2": "(\"free radical\"[tiab] OR \"oxidative stress\"[tiab] OR ROS[tiab] OR \"reactive oxygen species\"[tiab] ) AND (theory[tiab] OR theories[tiab] OR hypothes*[tiab] OR framework*[tiab] OR paradigm*[tiab] OR \"ultimate cause\"[tiab] OR \"proximate cause\"[tiab] OR \"evolution*\"[tiab]) AND (aging[tiab] OR ageing[tiab] OR Aging[MeSH] OR Geriatrics[MeSH] OR \"Cellular Senescence\"[Majr] OR \"Aging/physiology\"[Majr])",
+      "__3": 4113
+    },
+    {
+      "Theory Category": "Mechanistic Theories",
+      "Sub-Category": "Molecular Damage",
+      "Theory Name": "Somatic DNA Damage Theory",
+      "Main Concepts": "- Damage to somatic DNA accumulates over time\n- DNA repair is imperfect\n- Accumulated damage leads to mutations and genomic instability, causing aging",
+      "Seed Keyword List": [
+        "somatic dna damage",
+        "somatic mutation",
+        "genomic instability",
+        "dna lesions",
+        "dna damage",
+        "dna repair",
+        "mutations",
+        "genotoxic stress",
+        "chromosome abnormalities",
+        "leo szilard",
+        "ros",
+        "cellular senescence"
+      ],
+      "": [
+        "somatic dna damage",
+        "somatic mutation theory",
+        "genomic instability",
+        "dna lesions",
+        "dna repair mechanisms",
+        "accumulated mutations",
+        "genotoxic stress",
+        "chromosome abnormalities",
+        "leo szilard"
+      ],
+      "__1": "((\"somatic dna damage\"[tiab] OR \"somatic mutation\"[tiab] OR \"genomic instability\"[tiab]) AND (\"dna repair\"[tiab] OR aging[tiab])) AND (\"Aging\"[Mesh] OR \"Senescence\"[Mesh])",
+      "__2": "(\"somatic dna damage\"[tiab] OR \"somatic mutation\"[tiab] OR \"genomic instability\"[tiab] ) AND (aging[tiab] OR ageing[tiab] OR Aging[MeSH] OR Geriatrics[MeSH] OR \"Cellular Senescence\"[Majr] OR \"Aging/physiology\"[Majr])",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Mechanistic Theories",
+      "Sub-Category": "Molecular Damage",
+      "Theory Name": "Cross-Linking/Glycation Theory",
+      "Main Concepts": "- Chemical cross-links form between large molecules over time\n- Glycation (reaction with sugars) forms Advanced Glycation End-products (AGEs)\n- Cross-linking causes tissue stiffness and impaired function",
+      "Seed Keyword List": [
+        "cross-linking theory",
+        "glycation",
+        "advanced glycation end-products",
+        "ages",
+        "maillard reaction",
+        "protein cross-linking",
+        "collagen cross-linking",
+        "tissue stiffness",
+        "non-enzymatic glycosylation"
+      ],
+      "": [
+        "cross-linking theory",
+        "glycation theory",
+        "advanced glycation end-products",
+        "AGEs",
+        "maillard reaction",
+        "protein cross-linking",
+        "collagen cross-linking",
+        "tissue stiffness",
+        "non-enzymatic glycosylation",
+        "johan bjorksten"
+      ],
+      "__1": "((\"cross-linking theory\"[tiab] OR \"glycation\"[tiab] OR \"advanced glycation end-products\"[tiab] OR AGEs[tiab])) AND (\"Aging\"[Mesh] OR \"Senescence\"[Mesh])",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Mechanistic Theories",
+      "Sub-Category": "Molecular Damage",
+      "Theory Name": "Error Catastrophe Theory",
+      "Main Concepts": "- Errors in protein synthesis machinery create a positive feedback loop\n- Leads to an exponential cascade of faulty proteins\n- \"Error catastrophe\" causes cellular death and aging",
+      "Seed Keyword List": [
+        "error catastrophe",
+        "protein synthesis errors",
+        "translational fidelity",
+        "faulty proteins",
+        "error feedback loop",
+        "leslie orgel",
+        "rna protein synthesis"
+      ],
+      "": [
+        "error catastrophe theory",
+        "protein synthesis errors",
+        "translational fidelity",
+        "faulty proteins",
+        "error feedback loop",
+        "leslie orgel",
+        "mistranslation",
+        "protein synthesis machinery"
+      ],
+      "__1": "(\"error catastrophe theory\"[tiab] OR (orgel[au] AND \"protein synthesis\"[tiab])) AND (\"Aging\"[Mesh] OR \"Senescence\"[Mesh])",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Mechanistic Theories",
+      "Sub-Category": "Molecular Damage",
+      "Theory Name": "Protein Damage Theory",
+      "Main Concepts": "- Aging is driven by a decline in proteome integrity (Loss of Proteostasis)\n- Caused by increased protein damage and decreased quality control (chaperones, autophagy)\n- Leads to accumulation of toxic protein aggregates",
+      "Seed Keyword List": [
+        "proteostasis",
+        "loss of proteostasis",
+        "protein homeostasis",
+        "protein damage",
+        "protein aggregation",
+        "misfolded proteins",
+        "protein quality control",
+        "chaperones",
+        "autophagy",
+        "ubiquitin proteasome system",
+        "toxic aggregates"
+      ],
+      "": [
+        "proteostasis",
+        "loss of proteostasis",
+        "protein homeostasis",
+        "protein aggregation",
+        "misfolded proteins",
+        "protein quality control",
+        "chaperones",
+        "autophagy",
+        "ubiquitin proteasome system",
+        "toxic aggregates"
+      ],
+      "__1": "((\"proteostasis\"[tiab] OR \"protein aggregation\"[tiab]) AND (aging[tiab] OR senescence[tiab])) AND (\"Aging\"[Mesh] OR \"Senescence\"[Mesh])",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Mechanistic Theories",
+      "Sub-Category": "Cellular/Organelle Damage",
+      "Theory Name": "Mitochondrial Decline Theory (MFRTA)",
+      "Main Concepts": "- Mitochondria are the primary source and target of ROS\n- A \"vicious cycle\" of mtDNA damage, dysfunction, and increased ROS production\n- Leads to cellular energy decline and senescence",
+      "Seed Keyword List": [
+        "mitochondrial decline",
+        "mitochondrial theory",
+        "mfrta",
+        "mitochondrial dysfunction",
+        "mtdna damage",
+        "vicious cycle",
+        "cellular respiration",
+        "energy decline",
+        "mitochondrial ros",
+        "bioenergetics"
+      ],
+      "": [
+        "mitochondrial theory of aging",
+        "mitochondrial dysfunction",
+        "mtdna damage",
+        "vicious cycle hypothesis",
+        "bioenergetic decline",
+        "mitochondrial free radical theory",
+        "mfrta",
+        "electron transport chain leakage"
+      ],
+      "__1": "((\"mitochondrial theory of aging\"[tiab] OR \"mitochondrial dysfunction\"[tiab]) AND (\"mtdna\"[tiab] OR \"bioenergetic*\"[tiab])) AND (\"Aging\"[Mesh] OR \"Senescence\"[Mesh])",
+      "__2": "(\"mitochondrial theory of aging\"[tiab] OR \"mitochondrial dysfunction\"[tiab] OR \"mtdna\"[tiab])\nAND (aging[tiab] OR ageing[tiab] OR Aging[MeSH] OR Geriatrics[MeSH] OR \"Cellular Senescence\"[Majr] OR \"Aging/physiology\"[Majr])",
+      "__3": 6438
+    },
+    {
+      "Theory Category": "Mechanistic Theories",
+      "Sub-Category": "Cellular/Organelle Damage",
+      "Theory Name": "Membrane Theory of Aging",
+      "Main Concepts": "- Cell membranes become more rigid and less fluid with age\n- Caused by lipid peroxidation and altered lipid composition\n- Impairs function of membrane proteins, disrupting cellular homeostasis",
+      "Seed Keyword List": [
+        "membrane theory of aging",
+        "membrane rigidity",
+        "membrane fluidity",
+        "lipid peroxidation",
+        "lipid composition",
+        "membrane proteins",
+        "cellular homeostasis"
+      ],
+      "": [
+        "membrane theory of aging",
+        "membrane rigidity",
+        "membrane fluidity",
+        "lipid peroxidation",
+        "membrane viscosity",
+        "imre zsolnai-nagy",
+        "membrane hypothesis of aging"
+      ],
+      "__1": "((\"membrane theory of aging\"[tiab] OR \"membrane rigidity\"[tiab] OR \"membrane fluidity\"[tiab]) AND (aging[tiab] OR senescence[tiab]))",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Mechanistic Theories",
+      "Sub-Category": "Cellular/Organelle Damage",
+      "Theory Name": "Waste Accumulation Theory",
+      "Main Concepts": "- Lifelong accumulation of metabolic waste (e.g., lipofuscin) in post-mitotic cells\n- Waste clogs lysosomes, impairing autophagy\n- Leads to a \"garbage catastrophe\" and cellular dysfunction",
+      "Seed Keyword List": [
+        "waste accumulation",
+        "garbage catastrophe",
+        "lipofuscin",
+        "age pigment",
+        "lysosomal dysfunction",
+        "autophagy impairment",
+        "metabolic waste",
+        "post-mitotic cells"
+      ],
+      "": [
+        "waste accumulation theory",
+        "garbage catastrophe",
+        "lipofuscin",
+        "age pigment",
+        "lysosomal dysfunction",
+        "autophagy impairment",
+        "metabolic waste",
+        "post-mitotic cells",
+        "cellular debris"
+      ],
+      "__1": "((\"waste accumulation\"[tiab] OR \"garbage catastrophe\"[tiab] OR \"lipofuscin\"[tiab]) AND (aging[tiab] OR senescence[tiab])) AND (\"Aging\"[Mesh] OR \"Senescence\"[Mesh])",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Mechanistic Theories",
+      "Sub-Category": "Tissue/Organ Damage",
+      "Theory Name": "Wear and Tear Theory",
+      "Main Concepts": "- The body, like a machine, wears out over time from continuous use\n- Aging is the result of accumulated damage from internal and external stressors",
+      "Seed Keyword List": [
+        "wear and tear",
+        "accumulated damage",
+        "internal stressors",
+        "external stressors",
+        "cellular damage",
+        "organ damage",
+        "august weismann"
+      ],
+      "": [
+        "wear and tear theory",
+        "accumulated damage",
+        "cellular damage",
+        "organ damage",
+        "august weismann",
+        "cumulative damage",
+        "environmental stressors"
+      ],
+      "__1": "(\"wear and tear theory\"[tiab] AND (aging[tiab] OR senescence[tiab]))",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Mechanistic Theories",
+      "Sub-Category": "Genetic Limitations",
+      "Theory Name": "Replicative Senescence/Telomere Theory",
+      "Main Concepts": "- Normal cells have a finite number of divisions (Hayflick Limit)\n- Caused by progressive shortening of telomeres\n- Critically short telomeres trigger irreversible growth arrest (senescence)",
+      "Seed Keyword List": [
+        "replicative senescence",
+        "telomere theory",
+        "telomere shortening",
+        "hayflick limit",
+        "cell division",
+        "end replication problem",
+        "telomerase",
+        "growth arrest",
+        "leonard hayflick",
+        "alexey olovnikov"
+      ],
+      "": [
+        "replicative senescence",
+        "telomere shortening",
+        "hayflick limit",
+        "end-replication problem",
+        "telomerase activity",
+        "cellular clock",
+        "leonard hayflick",
+        "alexey olovnikov",
+        "critically short telomeres"
+      ],
+      "__1": "((\"replicative senescence\"[tiab] OR \"telomere shortening\"[tiab] OR \"hayflick limit\"[tiab])) AND (\"Aging\"[Mesh] OR \"Cellular Senescence\"[Mesh])",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Mechanistic Theories",
+      "Sub-Category": "Genetic Limitations",
+      "Theory Name": "Programmed Longevity/Gene Regulation",
+      "Main Concepts": "- Aging is genetically controlled and follows a biological timetable\n- Regulated by sequential activation/deactivation of \"gerontogenes\"\n- Conserved signaling pathways (e.g., insulin/IGF-1) control the rate of aging",
+      "Seed Keyword List": [
+        "programmed longevity",
+        "gene regulation",
+        "gerontogenes",
+        "aging genes",
+        "biological timetable",
+        "conserved pathways",
+        "insulin signaling",
+        "igf-1 pathway",
+        "tor pathway",
+        "sirtuins"
+      ],
+      "": [
+        "programmed longevity",
+        "gene regulation theory",
+        "gerontogenes",
+        "aging genes",
+        "biological timetable",
+        "conserved pathways",
+        "insulin signaling",
+        "igf-1 pathway",
+        "tor pathway",
+        "sirtuins"
+      ],
+      "__1": "((\"programmed longevity\"[tiab] OR \"gerontogenes\"[tiab] OR \"gene regulation\"[tiab]) AND (\"aging\"[tiab] OR \"longevity\"[tiab])) AND (\"Aging\"[Mesh] OR \"Longevity\"[Mesh])",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Mechanistic Theories",
+      "Sub-Category": "Genetic Limitations",
+      "Theory Name": "Codon Restriction Theory",
+      "Main Concepts": "- Aging is controlled by a programmed restriction in the cell's ability to translate specific codons\n- Caused by changes in tRNAs or their charging enzymes\n- Impairs synthesis of specific proteins, leading to dysfunction",
+      "Seed Keyword List": [
+        "codon restriction",
+        "translational control",
+        "trna modification",
+        "protein synthesis",
+        "genetic program",
+        "codon usage"
+      ],
+      "": [
+        "codon restriction theory",
+        "translational control",
+        "trna modification",
+        "protein synthesis limitation",
+        "codon usage bias",
+        "translational efficiency"
+      ],
+      "__1": "(\"codon restriction theory\"[tiab] AND (aging[tiab] OR senescence[tiab]))",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Mechanistic Theories",
+      "Sub-Category": "Systemic Regulation",
+      "Theory Name": "Neuroendocrine Theory",
+      "Main Concepts": "- Aging is controlled by a biological clock in the neuroendocrine system (hypothalamus)\n- Hypothalamus loses sensitivity to hormonal feedback, disrupting homeostasis\n- Acts as a \"pacemaker\" for systemic aging",
+      "Seed Keyword List": [
+        "neuroendocrine theory",
+        "hormonal theory",
+        "hypothalamus",
+        "pituitary",
+        "biological clock",
+        "pacemaker of aging",
+        "hormonal feedback",
+        "homeostasis",
+        "vladimir dilman",
+        "caleb finch"
+      ],
+      "": [
+        "neuroendocrine theory",
+        "hormonal theory of aging",
+        "hypothalamus-pituitary axis",
+        "biological clock",
+        "pacemaker of aging",
+        "hormonal feedback loop",
+        "homeostasis disruption",
+        "vladimir dilman",
+        "caleb finch"
+      ],
+      "__1": "((\"neuroendocrine theory\"[tiab] OR \"hormonal theory of aging\"[tiab]) AND (hypothalamus[tiab] OR pituitary[tiab])) AND (\"Aging\"[Mesh] OR \"Senescence\"[Mesh])",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Mechanistic Theories",
+      "Sub-Category": "Systemic Regulation",
+      "Theory Name": "Immunological Theory",
+      "Main Concepts": "- Aging is caused by the decline of the immune system (immunosenescence)\n- Involves decline in adaptive immunity and increase in chronic inflammation (inflammaging)\n- Leads to increased susceptibility to infection and age-related diseases",
+      "Seed Keyword List": [
+        "immunological theory",
+        "immunosenescence",
+        "inflammaging",
+        "immune decline",
+        "thymic involution",
+        "adaptive immunity",
+        "innate immunity",
+        "chronic inflammation",
+        "t-cells",
+        "b-cells",
+        "roy walford"
+      ],
+      "": [
+        "immunological theory of aging",
+        "immunosenescence",
+        "inflammaging",
+        "immune system decline",
+        "thymic involution",
+        "adaptive immunity decline",
+        "chronic low-grade inflammation",
+        "t-cell function",
+        "roy walford"
+      ],
+      "__1": "((\"immunological theory of aging\"[tiab] OR \"immunosenescence\"[tiab] OR \"inflammaging\"[tiab])) AND (\"Aging\"[Mesh] OR \"Immunosenescence\"[Mesh])",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Mechanistic Theories",
+      "Sub-Category": "Developmental Continuation",
+      "Theory Name": "Hyperfunction Theory",
+      "Main Concepts": "- Aging is a purposeless continuation of developmental growth programs (quasi-program)\n- Growth-promoting pathways (e.g., mTOR) become \"hyperfunctional\" in adulthood\n- Cellular hyperfunction directly drives age-related diseases",
+      "Seed Keyword List": [
+        "hyperfunction theory",
+        "quasi-program",
+        "developmental continuation",
+        "tor pathway",
+        "mtor",
+        "cellular hyperfunction",
+        "growth programs",
+        "purposeless continuation",
+        "mikhail blagosklonny"
+      ],
+      "": [
+        "hyperfunction theory",
+        "quasi-program",
+        "purposeless continuation of development",
+        "tor pathway",
+        "mtor hyperfunction",
+        "cellular hyperfunction",
+        "growth-promoting pathways",
+        "mikhail blagosklonny",
+        "antagonistic pleiotropy mechanism"
+      ],
+      "__1": "((\"hyperfunction theory\"[tiab] OR \"quasi-program\"[tiab] OR blagosklonny[au]) AND (aging[tiab] OR mtor[tiab])) AND (\"Aging\"[Mesh] OR \"Senescence\"[Mesh])",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Mechanistic Theories",
+      "Sub-Category": "Developmental Continuation",
+      "Theory Name": "Developmental Theory of Aging (DTA)",
+      "Main Concepts": "- Aging is a late-life consequence of the continued action of developmental programs\n- Driven by \"developmental inertia\" rather than a specific aging program\n- Provides a mechanistic basis for antagonistic pleiotropy",
+      "Seed Keyword List": [
+        "developmental theory of aging",
+        "dta",
+        "developmental inertia",
+        "late-life consequence",
+        "antagonistic pleiotropy mechanism",
+        "ontogenetic drift"
+      ],
+      "": [
+        "developmental theory of aging",
+        "dta",
+        "developmental inertia",
+        "ontogenetic drift",
+        "late-life consequence of development",
+        "developmental programs continuation"
+      ],
+      "__1": "((\"developmental theory of aging\"[tiab] OR \"ontogenetic drift\"[tiab]) AND (aging[tiab] OR senescence[tiab]))",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Mechanistic Theories",
+      "Sub-Category": "Cell Fate",
+      "Theory Name": "Cellular Senescence",
+      "Main Concepts": "- Senescent cells (in permanent growth arrest) accumulate with age\n- They secrete a pro-inflammatory Senescence-Associated Secretory Phenotype (SASP)\n- SASP drives tissue dysfunction, chronic inflammation, and aging",
+      "Seed Keyword List": [
+        "cellular senescence",
+        "senescent cells",
+        "sasp",
+        "senescence-associated secretory phenotype",
+        "growth arrest",
+        "p16ink4a",
+        "p21",
+        "senolytics",
+        "pro-inflammatory"
+      ],
+      "": [
+        "cellular senescence",
+        "senescent cells",
+        "sasp",
+        "senescence-associated secretory phenotype",
+        "irreversible growth arrest",
+        "p16ink4a",
+        "p21",
+        "senolytics",
+        "pro-inflammatory cytokines"
+      ],
+      "__1": "(\"cellular senescence\"[tiab] OR \"senescence-associated secretory phenotype\"[tiab] OR SASP[tiab]) AND (\"Aging\"[Mesh] OR \"Cellular Senescence\"[Mesh])",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Mechanistic Theories",
+      "Sub-Category": "Cell Fate",
+      "Theory Name": "Stem Cell Exhaustion",
+      "Main Concepts": "- The number and/or function of adult stem cells decline with age\n- Caused by both intrinsic damage and extrinsic changes in the stem cell niche\n- Compromises tissue regeneration and maintenance",
+      "Seed Keyword List": [
+        "stem cell exhaustion",
+        "stem cell decline",
+        "adult stem cells",
+        "regenerative capacity",
+        "tissue maintenance",
+        "stem cell niche",
+        "hematopoietic stem cells",
+        "tissue regeneration"
+      ],
+      "": [
+        "stem cell exhaustion",
+        "stem cell decline",
+        "adult stem cells",
+        "regenerative capacity loss",
+        "tissue maintenance failure",
+        "stem cell niche deterioration",
+        "hematopoietic stem cells"
+      ],
+      "__1": "((\"stem cell exhaustion\"[tiab] OR \"stem cell decline\"[tiab]) AND (aging[tiab] OR senescence[tiab])) AND (\"Aging\"[Mesh] OR \"Stem Cells\"[Mesh])",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Mechanistic Theories",
+      "Sub-Category": "Cell Fate",
+      "Theory Name": "Dysdifferentiation Hypothesis",
+      "Main Concepts": "- Aging is caused by the progressive loss of the stable, differentiated state of cells\n- Leads to \"transcriptional noise\" and loss of cellular identity\n- Caused by deterioration of epigenetic control",
+      "Seed Keyword List": [
+        "dysdifferentiation",
+        "cellular identity",
+        "transcriptional noise",
+        "epigenetic drift",
+        "loss of differentiation",
+        "cell fate",
+        "epigenetic control"
+      ],
+      "": [
+        "dysdifferentiation hypothesis",
+        "loss of cellular identity",
+        "transcriptional noise",
+        "epigenetic drift",
+        "cell fate instability",
+        "epigenetic control deterioration",
+        "richard cutler"
+      ],
+      "__1": "((\"dysdifferentiation\"[tiab] OR \"transcriptional noise\"[tiab]) AND (aging[tiab] OR \"epigenetic*\"[tiab])) AND (\"Aging\"[Mesh] OR \"Senescence\"[Mesh])",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Mechanistic Theories",
+      "Sub-Category": "Information Theories",
+      "Theory Name": "Information Theory of Aging (ITOA)",
+      "Main Concepts": "- Aging is a progressive loss of epigenetic (analog) information, not genetic (digital) information\n- Caused by imperfect relocation of chromatin regulators after DNA repair\n- This loss of information is potentially reversible",
+      "Seed Keyword List": [
+        "information theory of aging",
+        "itoa",
+        "epigenetic information",
+        "analog information",
+        "epigenetic noise",
+        "loss of information",
+        "chromatin regulators",
+        "dna repair",
+        "sirtuins",
+        "david sinclair"
+      ],
+      "": [
+        "information theory of aging",
+        "loss of epigenetic information",
+        "epigenetic noise",
+        "yamanaka factors",
+        "epigenetic reprogramming",
+        "backup copy of information",
+        "chromatin regulators",
+        "sirtuins",
+        "david sinclair",
+        "analog information"
+      ],
+      "__1": "((\"information theory of aging\"[tiab] OR \"loss of epigenetic information\"[tiab]) OR (sinclair[au] AND \"epigenetic\"[tiab])) AND (\"Aging\"[Mesh] OR \"Senescence\"[Mesh])",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Mechanistic Theories",
+      "Sub-Category": "Information Theories",
+      "Theory Name": "Epigenetic Damage/Drift Theory",
+      "Main Concepts": "- The epigenome undergoes progressive, stochastic changes (drift) with age\n- Involves alterations in DNA methylation and histone modifications\n- Leads to transcriptional noise and is measured by epigenetic clocks",
+      "Seed Keyword List": [
+        "epigenetic drift",
+        "epigenetic damage",
+        "epigenome",
+        "dna methylation",
+        "histone modification",
+        "epigenetic clocks",
+        "horvath clock",
+        "transcriptional noise",
+        "biomarkers of aging"
+      ],
+      "": [
+        "epigenetic drift",
+        "epigenetic damage",
+        "epigenome instability",
+        "dna methylation changes",
+        "histone modification alterations",
+        "epigenetic clocks",
+        "horvath clock",
+        "transcriptional dysregulation"
+      ],
+      "__1": "((\"epigenetic drift\"[tiab] OR \"epigenetic clock*\"[tiab]) AND (aging[tiab] OR \"dna methylation\"[tiab])) AND (\"Aging\"[Mesh] OR \"Epigenesis, Genetic\"[Mesh])",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Mechanistic Theories",
+      "Sub-Category": "Information Theories",
+      "Theory Name": "Epigenetic Aging Clock's Theory",
+      "Main Concepts": "* Aging can be accurately measured and predicted by analyzing predictable, age-related changes in the epigenome, most commonly DNA methylation patterns at specific CpG sites.\n* These measurements are used to build algorithms, or \"epigenetic clocks,\" that estimate an individual's biological age, which can differ from their chronological age.\n* The deviation between biological (epigenetic) age and chronological age is known as \"epigenetic age acceleration\" and is a powerful predictor of health outcomes, disease risk, and all-cause mortality.\n* Epigenetic clocks serve as critical biomarkers for understanding the aging process and evaluating the effectiveness of potential anti-aging interventions.",
+      "Seed Keyword List": [
+        "epigenetic clock"
+      ],
+      "": "((\"epigenetic clock\"[tiab] OR \"DNA methylation age\"[tiab]) AND (aging[tiab] OR \"biological age\"[tiab] OR horvath[au])) AND (\"Aging\"[Mesh] OR \"Epigenesis, Genetic\"[Mesh])",
+      "__1": "",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Mechanistic Theories",
+      "Sub-Category": "Information Theories",
+      "Theory Name": "Loss of Morphostatic Information",
+      "Main Concepts": "* Aging is viewed as a defect in \"morphostasis\"—the active, ongoing process of maintaining a body's correct anatomical form and function.\n* It is caused by the progressive loss of the complex biological information, particularly endogenous bioelectric and epigenetic signals, that guides cells to correctly build and maintain tissues and organs.\n* This failure of the body's \"software\" or \"blueprint\" leads to a loss of anatomical homeostasis, causing organ malfunction and functional decline.\n* The theory posits that aging is not simply the result of accumulated molecular damage, but rather a failure in the high-level, goal-directed regulatory processes that coordinate cell behavior.",
+      "Seed Keyword List": [
+        "morphostasis",
+        "morphostatic information",
+        "morphostatic defect",
+        "anatomical homeostasis",
+        "bioelectric signaling",
+        "developmental bioelectricity",
+        "epigenetic information",
+        "software of life",
+        "morphogenesis",
+        "information theory",
+        "regulatory process",
+        "michael levin"
+      ],
+      "": [
+        "morphostasis",
+        "loss of morphostatic information",
+        "anatomical homeostasis",
+        "developmental bioelectricity",
+        "bioelectric signaling",
+        "morphogenetic field",
+        "pattern regeneration",
+        "software of life",
+        "michael levin",
+        "endogenous bioelectric signals"
+      ],
+      "__1": "((morphostasis[tiab] OR \"morphostatic information\"[tiab]) AND (\"bioelectric*\"[tiab] OR levin[au])) AND (\"Aging\"[Mesh] OR \"Senescence\"[Mesh])",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Mechanistic Theories",
+      "Sub-Category": "Physics & Systems",
+      "Theory Name": "Rate of Living Theory",
+      "Main Concepts": "- Lifespan is inversely proportional to metabolic rate\n- Organisms have a finite amount of \"vital energy\" to expend\n- \"Live fast, die young",
+      "Seed Keyword List": [
+        "rate of living",
+        "metabolic rate",
+        "vital energy",
+        "basal metabolic rate",
+        "energy expenditure",
+        "max rubner",
+        "raymond pearl"
+      ],
+      "": [
+        "rate of living theory",
+        "metabolic rate",
+        "basal metabolic rate",
+        "energy expenditure",
+        "finite vital energy",
+        "live fast die young",
+        "max rubner",
+        "raymond pearl"
+      ],
+      "__1": "(\"rate of living theory\"[tiab] AND (aging[tiab] OR \"metabolic rate\"[tiab]))",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Mechanistic Theories",
+      "Sub-Category": "Physics & Systems",
+      "Theory Name": "Energy Consumption Hypothesis",
+      "Main Concepts": "- A modern refinement of the Rate of Living theory\n- Focuses on the complex relationship between energy expenditure components and aging",
+      "Seed Keyword List": [
+        "energy consumption hypothesis",
+        "total energy expenditure",
+        "metabolic rate",
+        "energy budget",
+        "lifetime energy expenditure"
+      ],
+      "": [
+        "energy consumption hypothesis",
+        "total energy expenditure",
+        "lifetime energy expenditure",
+        "metabolic rate refinement",
+        "energy budget"
+      ],
+      "__1": "(\"energy consumption hypothesis\"[tiab] AND (aging[tiab] OR \"metabolic rate\"[tiab]))",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Mechanistic Theories",
+      "Sub-Category": "Physics & Systems",
+      "Theory Name": "Dissipation/Thermodynamic Theory",
+      "Main Concepts": "- Aging is a dissipative process, an increase in entropy\n- Living systems are open, self-organizing structures that dissipate energy\n- Aging occurs when organisms become thermodynamically unstable",
+      "Seed Keyword List": [
+        "thermodynamic theory",
+        "dissipative process",
+        "entropy",
+        "second law of thermodynamics",
+        "thermodynamic stability",
+        "self-organizing systems"
+      ],
+      "": [
+        "thermodynamic theory of aging",
+        "dissipative process",
+        "entropy increase",
+        "second law of thermodynamics",
+        "thermodynamic instability",
+        "self-organizing systems"
+      ],
+      "__1": "((\"thermodynamic theory\"[tiab] OR \"dissipation theory\"[tiab]) AND aging[tiab])",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Mechanistic Theories",
+      "Sub-Category": "Physics & Systems",
+      "Theory Name": "Deprivation-Syndrome Theory",
+      "Main Concepts": "- Aging is a stress-resistance phenotype counteracting a germ cell-inflicted death pathway\n- Rooted in a germ-soma conflict over resources\n- A deprivation response modulated by the reproductive phase",
+      "Seed Keyword List": [
+        "deprivation-syndrome",
+        "germ-soma conflict",
+        "death pathway",
+        "stress-resistance",
+        "deprivation response",
+        "reproductive phase"
+      ],
+      "": [
+        "deprivation-syndrome theory",
+        "germ-soma conflict",
+        "germ cell inflicted death",
+        "stress-resistance phenotype",
+        "deprivation response"
+      ],
+      "__1": "(\"deprivation-syndrome theory\"[tiab] AND (aging[tiab] OR \"germ-soma\"[tiab]))",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Integrative Frameworks",
+      "Sub-Category": "Consensus Models",
+      "Theory Name": "Hallmarks of Aging",
+      "Main Concepts": "- An integrated framework of interconnected biological mechanisms driving aging\n- Categorizes aging into primary, antagonistic, and integrative hallmarks\n- Provides a consensus model for modern aging research",
+      "Seed Keyword List": [
+        "hallmarks of aging",
+        "integrative framework",
+        "consensus model",
+        "genomic instability",
+        "telomere attrition",
+        "epigenetic alterations",
+        "loss of proteostasis",
+        "deregulated nutrient-sensing",
+        "mitochondrial dysfunction",
+        "cellular senescence",
+        "stem cell exhaustion",
+        "altered intercellular communication"
+      ],
+      "": [
+        "hallmarks of aging",
+        "integrative framework",
+        "genomic instability",
+        "telomere attrition",
+        "epigenetic alterations",
+        "loss of proteostasis",
+        "deregulated nutrient-sensing",
+        "mitochondrial dysfunction",
+        "cellular senescence",
+        "stem cell exhaustion",
+        "altered intercellular communication"
+      ],
+      "__1": "(\"hallmarks of aging\"[tiab])",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Integrative Frameworks",
+      "Sub-Category": "Synthesis Models",
+      "Theory Name": "SENS",
+      "Main Concepts": "- An engineering approach to repair age-related damage\n- Proposes therapies to address seven categories of damage\n- Aims for \"engineered negligible senescence",
+      "Seed Keyword List": [
+        "sens",
+        "strategies for engineered negligible senescence",
+        "engineered negligible senescence",
+        "damage repair",
+        "rejuvenation therapies",
+        "aubrey de grey",
+        "cell loss",
+        "death-resistant cells",
+        "nuclear mutations",
+        "mitochondrial mutations",
+        "intracellular junk",
+        "extracellular junk",
+        "extracellular crosslinks"
+      ],
+      "": [
+        "sens",
+        "strategies for engineered negligible senescence",
+        "engineered negligible senescence",
+        "damage repair approach",
+        "rejuvenation therapies",
+        "aubrey de grey",
+        "seven deadly things"
+      ],
+      "__1": "((\"sens\"[tiab] OR \"strategies for engineered negligible senescence\"[tiab]) AND (aging[tiab] OR rejuvenation[tiab]))",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Psychosocial & Multidimensional",
+      "Sub-Category": "Sociological (Functionalist)",
+      "Theory Name": "Disengagement Theory",
+      "Main Concepts": "- Aging is an inevitable, mutual withdrawal between the individual and society\n- Disengagement is natural, acceptable, and beneficial for social stability\n- Allows for smooth transition of roles to younger generations",
+      "Seed Keyword List": [
+        "disengagement theory",
+        "mutual withdrawal",
+        "social withdrawal",
+        "reduced social involvement",
+        "role transition",
+        "functionalist",
+        "social stability",
+        "elaine cumming",
+        "william henry",
+        "adjustment to aging"
+      ],
+      "": [
+        "disengagement theory",
+        "mutual withdrawal",
+        "social disengagement",
+        "role relinquishment",
+        "functionalist perspective",
+        "cumming and henry",
+        "inevitable withdrawal",
+        "decreased social interaction"
+      ],
+      "__1": "(\"disengagement theory\"[tiab] AND (aging[tiab] OR gerontology[tiab] OR elderly[tiab]))",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Psychosocial & Multidimensional",
+      "Sub-Category": "Sociological (Functionalist)",
+      "Theory Name": "Activity Theory",
+      "Main Concepts": "- Successful aging occurs when older adults stay active and maintain social interactions\n- Assumes a positive relationship between activity and life satisfaction\n- Lost roles should be replaced with new activities",
+      "Seed Keyword List": [
+        "activity theory",
+        "active engagement",
+        "social participation",
+        "life satisfaction",
+        "maintaining interactions",
+        "role replacement",
+        "successful aging",
+        "robert havighurst",
+        "adjustment to aging"
+      ],
+      "": [
+        "activity theory",
+        "successful aging",
+        "active engagement",
+        "life satisfaction",
+        "role replacement",
+        "maintaining activity",
+        "robert havighurst",
+        "staying active",
+        "social interaction in late life"
+      ],
+      "__1": "(\"activity theory\"[tiab] AND (\"successful aging\"[tiab] OR \"life satisfaction\"[tiab] OR elderly[tiab]))",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Psychosocial & Multidimensional",
+      "Sub-Category": "Sociological (Functionalist)",
+      "Theory Name": "Continuity Theory",
+      "Main Concepts": "- Older adults attempt to preserve and maintain existing internal (personality, beliefs) and external (roles, relationships) structures\n- Adaptation is based on past experiences and strategies\n- Emphasizes consistency of lifestyle and identity",
+      "Seed Keyword List": [
+        "continuity theory",
+        "consistency",
+        "lifestyle",
+        "identity",
+        "internal structures",
+        "external structures",
+        "adaptive strategies",
+        "robert atchley",
+        "adjustment to aging"
+      ],
+      "": [
+        "continuity theory",
+        "maintaining consistency",
+        "internal continuity",
+        "external continuity",
+        "adaptive strategies",
+        "robert atchley",
+        "preserving lifestyle",
+        "developmental continuity"
+      ],
+      "__1": "(\"continuity theory\"[tiab] AND (aging[tiab] OR \"older adult*\"[tiab] OR atchley[au]))",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Psychosocial & Multidimensional",
+      "Sub-Category": "Sociological (Conflict/Stratification)",
+      "Theory Name": "Modernization Theory",
+      "Main Concepts": "- The social status of older people is inversely related to the degree of societal modernization\n- Industrialization, urbanization, and mass education devalue the roles and knowledge of the elderly",
+      "Seed Keyword List": [
+        "modernization theory",
+        "social status",
+        "industrialization",
+        "urbanization",
+        "devaluation of elderly",
+        "societal modernization",
+        "donald cowgill",
+        "lowell holmes"
+      ],
+      "": [
+        "modernization theory",
+        "social status of elderly",
+        "industrialization",
+        "urbanization",
+        "devaluation of elderly",
+        "societal modernization",
+        "donald cowgill",
+        "lowell holmes"
+      ],
+      "__1": "(\"modernization theory\"[tiab] AND (aging[tiab] OR \"social status\"[tiab] OR elderly[tiab]))",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Psychosocial & Multidimensional",
+      "Sub-Category": "Sociological (Conflict/Stratification)",
+      "Theory Name": "Age Stratification Theory",
+      "Main Concepts": "- Society is stratified by age groups, which determines access to resources, roles, and status\n- Age cohorts are influenced by their shared historical context\n- Focuses on the dynamics between aging individuals and the age-graded social structure",
+      "Seed Keyword List": [
+        "age stratification",
+        "age cohorts",
+        "age grades",
+        "social structure",
+        "life course",
+        "matilda white riley",
+        "age-related roles"
+      ],
+      "": [
+        "age stratification theory",
+        "age cohorts",
+        "age grades",
+        "social structure",
+        "life course perspective",
+        "matilda white riley",
+        "age-related roles"
+      ],
+      "__1": "(\"age stratification theory\"[tiab] AND (aging[tiab] OR \"life course\"[tiab] OR \"age cohort*\"[tiab]))",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Psychosocial & Multidimensional",
+      "Sub-Category": "Sociological (Interactionist/Niche)",
+      "Theory Name": "Subculture Theory",
+      "Main Concepts": "- Older people form a subculture with shared interests, problems, and a unique group consciousness\n- Arises from shared experiences of aging and societal attitudes\n- Fosters social integration and positive self-conception",
+      "Seed Keyword List": [
+        "subculture theory",
+        "aging subculture",
+        "group consciousness",
+        "shared interests",
+        "social integration",
+        "arnold rose"
+      ],
+      "": [
+        "subculture theory of aging",
+        "aging subculture",
+        "group consciousness",
+        "shared interests",
+        "social integration",
+        "arnold rose"
+      ],
+      "__1": "(\"subculture theory\"[tiab] AND (aging[tiab] OR elderly[tiab]))",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Psychosocial & Multidimensional",
+      "Sub-Category": "Sociological (Interactionist/Niche)",
+      "Theory Name": "Person-Environment Fit Theory",
+      "Main Concepts": "- Behavior is a function of the interaction between the person and their environment\n- Optimal outcomes occur when personal competence matches environmental demands (\"press\")\n- Misfit leads to negative outcomes",
+      "Seed Keyword List": [
+        "person-environment fit",
+        "environmental press",
+        "personal competence",
+        "competence-press model",
+        "ecological theory of aging",
+        "powell lawton"
+      ],
+      "": [
+        "person-environment fit",
+        "environmental press",
+        "personal competence",
+        "competence-press model",
+        "ecological theory of aging",
+        "powell lawton"
+      ],
+      "__1": "((\"person-environment fit\"[tiab] OR \"competence-press model\"[tiab]) AND (aging[tiab] OR elderly[tiab]))",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Psychosocial & Multidimensional",
+      "Sub-Category": "Psychological (Developmental)",
+      "Theory Name": "Erikson's Eight Stages of Life",
+      "Main Concepts": "- Personality develops in eight sequential stages, each with a psychosocial crisis\n- The final stage (late adulthood) is \"Integrity vs. Despair\"\n- Successful resolution of crises leads to basic virtues",
+      "Seed Keyword List": [
+        "erikson's stages",
+        "psychosocial development",
+        "integrity vs despair",
+        "eight stages of man",
+        "ego integrity",
+        "life review",
+        "erik erikson"
+      ],
+      "": [
+        "erikson's stages",
+        "psychosocial development",
+        "integrity vs despair",
+        "eight stages of man",
+        "ego integrity",
+        "life review",
+        "erik erikson"
+      ],
+      "__1": "(erikson[au] AND (\"integrity vs despair\"[tiab] OR \"psychosocial development\"[tiab])) AND (aging[tiab] OR \"late adulthood\"[tiab])",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Psychosocial & Multidimensional",
+      "Sub-Category": "Psychological (Developmental)",
+      "Theory Name": "Peck's Expansion",
+      "Main Concepts": "- Elaborates on Erikson's final stages\n- Defines specific psychological tasks for middle age (e.g., Valuing Wisdom vs. Physical Powers)\n- Defines tasks for old age (e.g., Ego Differentiation vs. Work-Role Preoccupation)",
+      "Seed Keyword List": [
+        "peck's tasks",
+        "developmental tasks",
+        "ego differentiation",
+        "body transcendence",
+        "ego transcendence",
+        "robert peck"
+      ],
+      "": [
+        "peck's developmental tasks",
+        "ego differentiation",
+        "body transcendence",
+        "ego transcendence",
+        "work-role preoccupation",
+        "robert peck"
+      ],
+      "__1": "(\"peck\"[au] AND (\"developmental tasks\"[tiab] OR \"ego differentiation\"[tiab])) AND (aging[tiab] OR \"old age\"[tiab])",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Psychosocial & Multidimensional",
+      "Sub-Category": "Psychological (Developmental)",
+      "Theory Name": "Jung's Theory of Individualism",
+      "Main Concepts": "- Development in the second half of life focuses on individuation\n- Involves integrating the conscious and unconscious parts of the self\n- A process of self-realization and finding meaning",
+      "Seed Keyword List": [
+        "jung's theory",
+        "individuation",
+        "self-realization",
+        "second half of life",
+        "archetypes",
+        "carl jung",
+        "inward focus"
+      ],
+      "": [
+        "jung's theory",
+        "individuation",
+        "self-realization",
+        "second half of life",
+        "archetypes",
+        "carl jung",
+        "inward focus",
+        "midlife transition"
+      ],
+      "__1": "(jung[au] AND (\"individuation\"[tiab] OR \"self-realization\"[tiab])) AND (aging[tiab] OR \"second half of life\"[tiab])",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Psychosocial & Multidimensional",
+      "Sub-Category": "Psychological (Adaptive/Cognitive)",
+      "Theory Name": "Selective Optimization with Compensation (SOC)",
+      "Main Concepts": "- A model for successful aging and adaptation\n- Individuals select specific goals, optimize resources to achieve them, and compensate for losses\n- A strategy to manage the balance of gains and losses",
+      "Seed Keyword List": [
+        "selective optimization with compensation",
+        "soc model",
+        "successful aging",
+        "adaptive process",
+        "selection",
+        "optimization",
+        "compensation",
+        "paul baltes",
+        "margret baltes"
+      ],
+      "": [
+        "selective optimization with compensation",
+        "soc model",
+        "successful aging",
+        "adaptive development",
+        "selection optimization compensation",
+        "paul baltes",
+        "margret baltes"
+      ],
+      "__1": "(\"selective optimization with compensation\"[tiab] OR \"soc model\"[tiab]) AND (aging[tiab] OR \"successful aging\"[tiab])",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Psychosocial & Multidimensional",
+      "Sub-Category": "Psychological (Adaptive/Cognitive)",
+      "Theory Name": "Theories of Everyday Competence",
+      "Main Concepts": "- Focuses on the ability to perform cognitively complex tasks essential for independent living\n- Involves problem-solving in real-world contexts\n- Assesses Instrumental Activities of Daily Living (IADLs)",
+      "Seed Keyword List": [
+        "everyday competence",
+        "instrumental activities of daily living",
+        "iadls",
+        "practical problem-solving",
+        "cognitive aging",
+        "independent living"
+      ],
+      "": [
+        "everyday competence",
+        "instrumental activities of daily living",
+        "iadls",
+        "practical problem-solving",
+        "cognitive aging",
+        "independent living",
+        "functional ability"
+      ],
+      "__1": "(\"everyday competence\"[tiab] OR \"instrumental activities of daily living\"[tiab]) AND (aging[tiab] OR elderly[tiab])",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Psychosocial & Multidimensional",
+      "Sub-Category": "Psychological (Adaptive/Cognitive)",
+      "Theory Name": "Cognitive Slowing Hypothesis",
+      "Main Concepts": "- Age-related decline in fluid cognition is caused by a general decrease in the speed of processing operations\n- Slower processing limits the time available for complex operations and reduces the availability of information",
+      "Seed Keyword List": [
+        "cognitive slowing",
+        "processing speed",
+        "information processing",
+        "fluid cognition",
+        "cognitive decline",
+        "timothy salthouse"
+      ],
+      "": [
+        "cognitive slowing",
+        "processing speed theory",
+        "general slowing hypothesis",
+        "fluid cognition decline",
+        "information processing speed",
+        "timothy salthouse"
+      ],
+      "__1": "((\"cognitive slowing\"[tiab] OR \"processing speed\"[tiab]) AND (\"cognitive aging\"[tiab] OR aging[tiab]))",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Psychosocial & Multidimensional",
+      "Sub-Category": "Philosophical (Historical/Classical)",
+      "Theory Name": "Plato's Theory of Aging",
+      "Main Concepts": "- Old age can be a time of peace and freedom from bodily desires\n- Allows for a greater focus on philosophy, conversation, and the pursuit of wisdom\n- A positive character is key to a happy old age",
+      "Seed Keyword List": [
+        "plato",
+        "philosophy of aging",
+        "pursuit of wisdom",
+        "freedom from desires"
+      ],
+      "": [
+        "plato",
+        "philosophy of aging",
+        "pursuit of wisdom",
+        "freedom from desires",
+        "republic",
+        "old age"
+      ],
+      "__1": "(plato[au] AND (aging[tiab] OR \"old age\"[tiab] OR wisdom[tiab]))",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Psychosocial & Multidimensional",
+      "Sub-Category": "Philosophical (Historical/Classical)",
+      "Theory Name": "Aristotle's Theory of Aging",
+      "Main Concepts": "- Aging is a \"natural illness,\" a non-pathological process of decline\n- Caused by the gradual loss of \"vital heat\"\n- Leads to both physical and mental faculties weakening",
+      "Seed Keyword List": [
+        "aristotle",
+        "natural illness",
+        "vital heat",
+        "loss of heat"
+      ],
+      "": [
+        "aristotle",
+        "natural illness",
+        "vital heat",
+        "loss of heat",
+        "de senectute",
+        "on youth and old age"
+      ],
+      "__1": "(aristotle[au] AND (aging[tiab] OR \"vital heat\"[tiab] OR \"old age\"[tiab]))",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Psychosocial & Multidimensional",
+      "Sub-Category": "Philosophical (Modern/Existential)",
+      "Theory Name": "Heidegger's 'Being-unto-death'",
+      "Main Concepts": "- Authentic existence is achieved by confronting one's own finitude and mortality\n- Death is the \"possibility of impossibility\" that defines one's being\n- Awareness of death pulls one out of inauthentic everyday life",
+      "Seed Keyword List": [
+        "heidegger",
+        "being-unto-death",
+        "finitude",
+        "mortality",
+        "authentic existence"
+      ],
+      "": [
+        "heidegger",
+        "being-unto-death",
+        "sein zum tode",
+        "finitude",
+        "mortality",
+        "authentic existence",
+        "being and time"
+      ],
+      "__1": "(heidegger[au] AND (\"being-unto-death\"[tiab] OR finitude[tiab] OR mortality[tiab]))",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Psychosocial & Multidimensional",
+      "Sub-Category": "Philosophical (Transcendental/Humanistic)",
+      "Theory Name": "Theory of Gerotranscendence",
+      "Main Concepts": "- A developmental shift in old age from a materialistic and rational view to a more cosmic and transcendent one\n- Involves new understandings of self, relationships, and existential questions\n- Leads to increased life satisfaction",
+      "Seed Keyword List": [
+        "gerotranscendence",
+        "cosmic perspective",
+        "transcendence",
+        "developmental shift",
+        "life satisfaction",
+        "lars tornstam"
+      ],
+      "": [
+        "gerotranscendence",
+        "cosmic perspective",
+        "transcendence in aging",
+        "developmental shift",
+        "lars tornstam",
+        "positive aging"
+      ],
+      "__1": "(gerotranscendence[tiab] OR (tornstam[au] AND aging[tiab]))",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Category": "Psychosocial & Multidimensional",
+      "Sub-Category": "Philosophical (Transcendental/Humanistic)",
+      "Theory Name": "Maslow's Hierarchy of Needs",
+      "Main Concepts": "- Human motivation is based on a hierarchy of needs, from physiological to self-actualization\n- In old age, priorities may shift back toward fundamental physiological and safety needs\n- Self-transcendence can become a key goal in later life",
+      "Seed Keyword List": [
+        "maslow's hierarchy",
+        "hierarchy of needs",
+        "self-actualization",
+        "self-transcendence",
+        "human motivation",
+        "abraham maslow"
+      ],
+      "": [
+        "maslow's hierarchy",
+        "hierarchy of needs",
+        "self-actualization",
+        "self-transcendence",
+        "human motivation",
+        "abraham maslow",
+        "elderly needs",
+        "palliative care"
+      ],
+      "__1": "(\"maslow's hierarchy\"[tiab] AND (aging[tiab] OR elderly[tiab] OR gerontology[tiab] OR \"palliative care\"[tiab]))",
+      "__2": "",
+      "__3": ""
+    },
+    {
+      "Theory Name": "Cellular Signaling and Epigenetic Regulation",
+      "Seed Keyword List": [
+        "cell signaling",
+        "epigenetics",
+        "regulation",
+        "molecular pathways",
+        "aging drivers"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Cellular Signaling and Epigenetic Regulation"
+    },
+    {
+      "Theory Name": "Hormonal and Neuroendocrine Aging Hypothesis",
+      "Seed Keyword List": [
+        "estrogen",
+        "hormones",
+        "cognition",
+        "neuroendocrine",
+        "hormonal decline"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Hormonal and Neuroendocrine Aging Hypothesis"
+    },
+    {
+      "Theory Name": "Neurophysiological Aging Hypothesis",
+      "Seed Keyword List": [
+        "calcium",
+        "brain aging",
+        "neurophysiology",
+        "neuronal excitability"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Neurophysiological Aging Hypothesis"
+    },
+    {
+      "Theory Name": "NAD+ and Sirtuin Pathway Dysfunction",
+      "Seed Keyword List": [
+        "NAD+",
+        "sirtuins",
+        "neurovascular",
+        "metabolic decline"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: NAD+ and Sirtuin Pathway Dysfunction"
+    },
+    {
+      "Theory Name": "Stress and Allostatic Load Hypothesis",
+      "Seed Keyword List": [
+        "stress",
+        "allostatic load",
+        "accelerated aging",
+        "biological stress"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Stress and Allostatic Load Hypothesis"
+    },
+    {
+      "Theory Name": "Metabolic Homeostasis Hypothesis",
+      "Seed Keyword List": [
+        "metabolism",
+        "homeostasis",
+        "stability",
+        "aging"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Metabolic Homeostasis Hypothesis"
+    },
+    {
+      "Theory Name": "Neurotransmitter Deafferentation Hypothesis",
+      "Seed Keyword List": [
+        "GABA",
+        "neurotransmitter",
+        "brain aging",
+        "deafferentation"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Neurotransmitter Deafferentation Hypothesis"
+    },
+    {
+      "Theory Name": "Metabolic and Signaling Pathways in Aging",
+      "Seed Keyword List": [
+        "AMPK",
+        "metabolism",
+        "food",
+        "homology",
+        "signaling"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Metabolic and Signaling Pathways in Aging"
+    },
+    {
+      "Theory Name": "Gate Control of Aging",
+      "Seed Keyword List": [
+        "neural gating",
+        "aging regulation",
+        "neurocontrol",
+        "sensory gating"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Gate Control of Aging"
+    },
+    {
+      "Theory Name": "Weathering Hypothesis",
+      "Seed Keyword List": [
+        "chronic stress",
+        "social determinants",
+        "health disparities"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Weathering Hypothesis"
+    },
+    {
+      "Theory Name": "Ecological Aging Theory",
+      "Seed Keyword List": [
+        "environment",
+        "adaptation",
+        "species survival"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Ecological Aging Theory"
+    },
+    {
+      "Theory Name": "Neuro-immune Aging Hypothesis",
+      "Seed Keyword List": [
+        "neuroimmune interactions",
+        "inflammation",
+        "aging"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Neuro-immune Aging Hypothesis"
+    },
+    {
+      "Theory Name": "Aging-Gravity Duality",
+      "Seed Keyword List": [
+        "gravity",
+        "aging",
+        "physics analogy"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Aging-Gravity Duality"
+    },
+    {
+      "Theory Name": "Mitochondrial-Lysosomal Axis Theory",
+      "Seed Keyword List": [
+        "mitochondria",
+        "lysosomes",
+        "cellular degradation"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Mitochondrial-Lysosomal Axis Theory"
+    },
+    {
+      "Theory Name": "Calcium Hypothesis",
+      "Seed Keyword List": [
+        "calcium channels",
+        "cell signaling",
+        "aging"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Calcium Hypothesis"
+    },
+    {
+      "Theory Name": "Cellular Stability Hypothesis",
+      "Seed Keyword List": [
+        "cell stability",
+        "homeostasis",
+        "aging"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Cellular Stability Hypothesis"
+    },
+    {
+      "Theory Name": "Immune System and Aging",
+      "Seed Keyword List": [
+        "complement system",
+        "immune aging"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Immune System and Aging"
+    },
+    {
+      "Theory Name": "Neuroplasticity and Plasticity Theory",
+      "Seed Keyword List": [
+        "neuroplasticity",
+        "brain aging"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Neuroplasticity and Plasticity Theory"
+    },
+    {
+      "Theory Name": "Socioemotional Aging Theory",
+      "Seed Keyword List": [
+        "emotion",
+        "social selectivity",
+        "motivation"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Socioemotional Aging Theory"
+    },
+    {
+      "Theory Name": "Accelerated Aging Hypothesis",
+      "Seed Keyword List": [
+        "accelerated aging",
+        "premature aging"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Accelerated Aging Hypothesis"
+    },
+    {
+      "Theory Name": "Two-Hit Aging Hypothesis",
+      "Seed Keyword List": [
+        "multiple hits",
+        "damage accumulation"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Two-Hit Aging Hypothesis"
+    },
+    {
+      "Theory Name": "Skeletal Remodeling Theory",
+      "Seed Keyword List": [
+        "skeletal aging",
+        "remodeling"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Skeletal Remodeling Theory"
+    },
+    {
+      "Theory Name": "Accelerated Aging",
+      "Seed Keyword List": [
+        "premature aging",
+        "rapid decline"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Accelerated Aging"
+    },
+    {
+      "Theory Name": "Integrated Aging and Disease Theory",
+      "Seed Keyword List": [
+        "aging",
+        "diseases",
+        "multifactorial",
+        "systemic"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Integrated Aging and Disease Theory"
+    },
+    {
+      "Theory Name": "Nutritional Aging Intervention Theory",
+      "Seed Keyword List": [
+        "nutrition",
+        "senolytics",
+        "dietary interventions",
+        "aging"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Nutritional Aging Intervention Theory"
+    },
+    {
+      "Theory Name": "Radical Theory of Aging",
+      "Seed Keyword List": [
+        "radicals",
+        "free radicals",
+        "oxidation",
+        "damage"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Radical Theory of Aging"
+    },
+    {
+      "Theory Name": "Neutral Theory of Aging",
+      "Seed Keyword List": [
+        "neutral mutations",
+        "mutation",
+        "genetic drift"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Neutral Theory of Aging"
+    },
+    {
+      "Theory Name": "Cognitive Control Hypothesis",
+      "Seed Keyword List": [
+        "cognition",
+        "brain aging",
+        "neural control"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Cognitive Control Hypothesis"
+    },
+    {
+      "Theory Name": "NOX ROS Theory",
+      "Seed Keyword List": [
+        "NADPH oxidase",
+        "ROS",
+        "oxidative stress"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: NOX ROS Theory"
+    },
+    {
+      "Theory Name": "Oxidation-Inflammation Theory",
+      "Seed Keyword List": [
+        "oxidative stress",
+        "inflammation",
+        "aging"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Oxidation-Inflammation Theory"
+    },
+    {
+      "Theory Name": "Oxidative Fluctuation Hypothesis",
+      "Seed Keyword List": [
+        "oxidative stress",
+        "fluctuations",
+        "damage"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Oxidative Fluctuation Hypothesis"
+    },
+    {
+      "Theory Name": "Beyond Free Radical Theory",
+      "Seed Keyword List": [
+        "oxidative stress",
+        "damage",
+        "additional mechanisms"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Beyond Free Radical Theory"
+    },
+    {
+      "Theory Name": "Redox Theory",
+      "Seed Keyword List": [
+        "redox balance",
+        "oxidation",
+        "reduction"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Redox Theory"
+    },
+    {
+      "Theory Name": "Memory Process Theory",
+      "Seed Keyword List": [
+        "memory",
+        "cognition",
+        "neural processes"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Memory Process Theory"
+    },
+    {
+      "Theory Name": "Biopolymer Conformational Theory",
+      "Seed Keyword List": [
+        "protein folding",
+        "biopolymer structure",
+        "misfolding"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Biopolymer Conformational Theory"
+    },
+    {
+      "Theory Name": "Brain Aging Hypothesis",
+      "Seed Keyword List": [
+        "brain aging",
+        "genomic instability",
+        "cancer"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Brain Aging Hypothesis"
+    },
+    {
+      "Theory Name": "Evolutionary Transfer Theory",
+      "Seed Keyword List": [
+        "evolution",
+        "transfer",
+        "aging"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Evolutionary Transfer Theory"
+    },
+    {
+      "Theory Name": "Experiential Diversity Theory",
+      "Seed Keyword List": [
+        "experience",
+        "diversity",
+        "aging"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Experiential Diversity Theory"
+    },
+    {
+      "Theory Name": "Microheteroplasmy Theory",
+      "Seed Keyword List": [
+        "heteroplasmy",
+        "mitochondria",
+        "mutations"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Microheteroplasmy Theory"
+    },
+    {
+      "Theory Name": "Carbonyl Toxification Theory",
+      "Seed Keyword List": [
+        "carbonyl stress",
+        "toxification",
+        "protein damage"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Carbonyl Toxification Theory"
+    },
+    {
+      "Theory Name": "Reproductive Cycle Theory",
+      "Seed Keyword List": [
+        "reproduction",
+        "cell cycle",
+        "aging"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Reproductive Cycle Theory"
+    },
+    {
+      "Theory Name": "Reductive Hotspot Hypothesis",
+      "Seed Keyword List": [
+        "damage hotspots",
+        "localized aging",
+        "molecular stress",
+        "cellular damage"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Reductive Hotspot Hypothesis"
+    },
+    {
+      "Theory Name": "Executive Coupling Hypothesis",
+      "Seed Keyword List": [
+        "neural control",
+        "brain aging",
+        "executive functions",
+        "neuroregulation"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Executive Coupling Hypothesis"
+    },
+    {
+      "Theory Name": "default - executive coupling hypothesis of aging",
+      "Seed Keyword List": [
+        "neural control",
+        "brain aging",
+        "executive functions",
+        "neuroregulation"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: default - executive coupling hypothesis of aging"
+    },
+    {
+      "Theory Name": "Evolutionary Adaptive Aging Theory",
+      "Seed Keyword List": [
+        "adaptation",
+        "evolution",
+        "trade-offs",
+        "survival"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Evolutionary Adaptive Aging Theory"
+    },
+    {
+      "Theory Name": "Modified ROS Model",
+      "Seed Keyword List": [
+        "ROS",
+        "oxidative stress",
+        "mitochondria",
+        "damage"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Modified ROS Model"
+    },
+    {
+      "Theory Name": "General Aging Mechanism",
+      "Seed Keyword List": [
+        "systemic aging",
+        "multi-factorial",
+        "biological decline"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: General Aging Mechanism"
+    },
+    {
+      "Theory Name": "generalized aging mechanism hypothesis",
+      "Seed Keyword List": [
+        "systemic aging",
+        "multi-factorial",
+        "biological decline"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: generalized aging mechanism hypothesis"
+    },
+    {
+      "Theory Name": "Nuclear Barrier Hypothesis",
+      "Seed Keyword List": [
+        "nuclear integrity",
+        "genomic stability"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Nuclear Barrier Hypothesis"
+    },
+    {
+      "Theory Name": "Nuclear barrier hypothesis of aging",
+      "Seed Keyword List": [
+        "nuclear integrity",
+        "genomic stability"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Nuclear barrier hypothesis of aging"
+    },
+    {
+      "Theory Name": "Red Queen Hypothesis",
+      "Seed Keyword List": [
+        "evolution",
+        "arms race",
+        "adaptation"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Red Queen Hypothesis"
+    },
+    {
+      "Theory Name": "Chaos Theory of Aging",
+      "Seed Keyword List": [
+        "complexity",
+        "non-linearity",
+        "systems"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Chaos Theory of Aging"
+    },
+    {
+      "Theory Name": "chaos theory of aging",
+      "Seed Keyword List": [
+        "complexity",
+        "non-linearity",
+        "systems"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: chaos theory of aging"
+    },
+    {
+      "Theory Name": "HIDL Hypothesis",
+      "Seed Keyword List": [
+        "damage load",
+        "early damage",
+        "aging rate"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: HIDL Hypothesis"
+    },
+    {
+      "Theory Name": "high initial damage load (HIDL) hypothesis",
+      "Seed Keyword List": [
+        "damage load",
+        "early damage",
+        "aging rate"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: high initial damage load (HIDL) hypothesis"
+    },
+    {
+      "Theory Name": "Melatonin and Circadian Hypotheses",
+      "Seed Keyword List": [
+        "melatonin",
+        "circadian rhythm",
+        "hormones",
+        "oxidative stress"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Melatonin and Circadian Hypotheses"
+    },
+    {
+      "Theory Name": "melatonin-based aging theories (including circadian rhythm deterioration and free radical scavenging hypothesis)",
+      "Seed Keyword List": [
+        "melatonin",
+        "circadian rhythm",
+        "hormones",
+        "oxidative stress"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: melatonin-based aging theories (including circadian rhythm deterioration and free radical scavenging hypothesis)"
+    },
+    {
+      "Theory Name": "Unified Oxidative and Genetic Programming Hypothesis",
+      "Seed Keyword List": [
+        "oxidative stress",
+        "genetic programming",
+        "aging"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Unified Oxidative and Genetic Programming Hypothesis"
+    },
+    {
+      "Theory Name": "Adaptive Aging Interpretation",
+      "Seed Keyword List": [
+        "adaptation",
+        "survival",
+        "functional decline"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Adaptive Aging Interpretation"
+    },
+    {
+      "Theory Name": "adaptive interpretation of aging",
+      "Seed Keyword List": [
+        "adaptation",
+        "survival",
+        "functional decline"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: adaptive interpretation of aging"
+    },
+    {
+      "Theory Name": "Diminished State Space Theory",
+      "Seed Keyword List": [
+        "state space",
+        "complexity",
+        "capacity"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Diminished State Space Theory"
+    },
+    {
+      "Theory Name": "Diminished State Space Theory of Human Aging",
+      "Seed Keyword List": [
+        "state space",
+        "complexity",
+        "capacity"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Diminished State Space Theory of Human Aging"
+    },
+    {
+      "Theory Name": "Glycation and Free Radical Theory",
+      "Seed Keyword List": [
+        "glycation",
+        "AGEs",
+        "protein cross-linking"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Glycation and Free Radical Theory"
+    },
+    {
+      "Theory Name": "Socio-Environmental Aging Theory",
+      "Seed Keyword List": [
+        "social factors",
+        "environment",
+        "disparities"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Socio-Environmental Aging Theory"
+    },
+    {
+      "Theory Name": "socio-environmental theory of aging",
+      "Seed Keyword List": [
+        "social factors",
+        "environment",
+        "disparities"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: socio-environmental theory of aging"
+    },
+    {
+      "Theory Name": "Mitochondrial Stress Signaling",
+      "Seed Keyword List": [
+        "mitochondria",
+        "stress",
+        "signaling"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Mitochondrial Stress Signaling"
+    },
+    {
+      "Theory Name": "mitochondrial stress signaling theory",
+      "Seed Keyword List": [
+        "mitochondria",
+        "stress",
+        "signaling"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: mitochondrial stress signaling theory"
+    },
+    {
+      "Theory Name": "Nitrogen Accumulation and Sleep Hypothesis",
+      "Seed Keyword List": [
+        "nitrogen",
+        "sleep",
+        "metabolism",
+        "reversal"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Nitrogen Accumulation and Sleep Hypothesis"
+    },
+    {
+      "Theory Name": "nitrogen accumulation and sleep as a reversal process",
+      "Seed Keyword List": [
+        "nitrogen",
+        "sleep",
+        "metabolism",
+        "reversal"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: nitrogen accumulation and sleep as a reversal process"
+    },
+    {
+      "Theory Name": "Network Theory of Aging",
+      "Seed Keyword List": [
+        "networks",
+        "systems",
+        "interactions"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Network Theory of Aging"
+    },
+    {
+      "Theory Name": "network theory of aging",
+      "Seed Keyword List": [
+        "networks",
+        "systems",
+        "interactions"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: network theory of aging"
+    },
+    {
+      "Theory Name": "Quality Control Theory",
+      "Seed Keyword List": [
+        "protein quality",
+        "autophagy",
+        "damage repair"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Quality Control Theory"
+    },
+    {
+      "Theory Name": "quality control theory of aging",
+      "Seed Keyword List": [
+        "protein quality",
+        "autophagy",
+        "damage repair"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: quality control theory of aging"
+    },
+    {
+      "Theory Name": "selfish anti-aging (SAA) hypothesis",
+      "Seed Keyword List": [
+        "selfish genes",
+        "evolution",
+        "aging",
+        "selection"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: selfish anti-aging (SAA) hypothesis"
+    },
+    {
+      "Theory Name": "Deuterium Isotope Effect Theory",
+      "Seed Keyword List": [
+        "deuterium",
+        "isotope",
+        "metabolic rate",
+        "molecular stress"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Deuterium Isotope Effect Theory"
+    },
+    {
+      "Theory Name": "Marginotomy Theory",
+      "Seed Keyword List": [
+        "marginotomy",
+        "organismal limits",
+        "aging boundary"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Marginotomy Theory"
+    },
+    {
+      "Theory Name": "Threshold Damage Accumulation Theory",
+      "Seed Keyword List": [
+        "threshold",
+        "damage",
+        "accumulation",
+        "aging"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Threshold Damage Accumulation Theory"
+    },
+    {
+      "Theory Name": "Cybernetic Aging Theory",
+      "Seed Keyword List": [
+        "cybernetics",
+        "feedback",
+        "control systems"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Cybernetic Aging Theory"
+    },
+    {
+      "Theory Name": "Homocysteine Aging Hypothesis",
+      "Seed Keyword List": [
+        "homocysteine",
+        "pro-aging",
+        "vascular",
+        "oxidative stress"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Homocysteine Aging Hypothesis"
+    },
+    {
+      "Theory Name": "Isomorph Theory",
+      "Seed Keyword List": [
+        "isomorph",
+        "physical aging",
+        "structure"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Isomorph Theory"
+    },
+    {
+      "Theory Name": "Sociological Inequality Theory",
+      "Seed Keyword List": [
+        "sociology",
+        "inequality",
+        "aging"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Sociological Inequality Theory"
+    },
+    {
+      "Theory Name": "Nitric Oxide Brain Aging Hypothesis",
+      "Seed Keyword List": [
+        "nitric oxide",
+        "brain",
+        "neurodegeneration"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Nitric Oxide Brain Aging Hypothesis"
+    },
+    {
+      "Theory Name": "mitohormesis",
+      "Seed Keyword List": [
+        "mitochondria",
+        "hormesis",
+        "adaptive stress"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: mitohormesis"
+    },
+    {
+      "Theory Name": "gene cluster hypothesis of aging",
+      "Seed Keyword List": [
+        "gene clusters",
+        "genetic regulation",
+        "aging"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: gene cluster hypothesis of aging"
+    },
+    {
+      "Theory Name": "deleterious network hypothesis of aging",
+      "Seed Keyword List": [
+        "networks",
+        "detrimental interactions",
+        "aging"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: deleterious network hypothesis of aging"
+    },
+    {
+      "Theory Name": "binding theory",
+      "Seed Keyword List": [
+        "binding",
+        "plasticity",
+        "neural connections"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: binding theory"
+    },
+    {
+      "Theory Name": "nucleolus-centrism in aging",
+      "Seed Keyword List": [
+        "nucleolus",
+        "ribosomal biogenesis",
+        "aging"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: nucleolus-centrism in aging"
+    },
+    {
+      "Theory Name": "unifying theory of aging",
+      "Seed Keyword List": [
+        "unification",
+        "systemic",
+        "integrative"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: unifying theory of aging"
+    },
+    {
+      "Theory Name": "Fading Electricity Hypothesis",
+      "Seed Keyword List": [
+        "electricity",
+        "bioelectricity",
+        "cell signaling",
+        "aging",
+        "fading"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Fading Electricity Hypothesis"
+    },
+    {
+      "Theory Name": "Cell Commitment Theory",
+      "Seed Keyword List": [
+        "cell",
+        "commitment",
+        "differentiation",
+        "aging"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Cell Commitment Theory"
+    },
+    {
+      "Theory Name": "Centrosome Hypothesis",
+      "Seed Keyword List": [
+        "centrosome",
+        "cell division",
+        "differentiation",
+        "aging"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Centrosome Hypothesis"
+    },
+    {
+      "Theory Name": "Energy Resilience Hypothesis",
+      "Seed Keyword List": [
+        "energy",
+        "resilience",
+        "metabolism",
+        "aging"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Energy Resilience Hypothesis"
+    },
+    {
+      "Theory Name": "Double-Agent Hypothesis",
+      "Seed Keyword List": [
+        "double-agent",
+        "aging",
+        "trade-offs"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Double-Agent Hypothesis"
+    },
+    {
+      "Theory Name": "Metronomic Hypothesis",
+      "Seed Keyword List": [
+        "metronomic",
+        "timing",
+        "aging"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Metronomic Hypothesis"
+    },
+    {
+      "Theory Name": "Multistep Aging Model",
+      "Seed Keyword List": [
+        "multistep",
+        "stages",
+        "progression"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Multistep Aging Model"
+    },
+    {
+      "Theory Name": "Rejuvenation Hypothesis",
+      "Seed Keyword List": [
+        "rejuvenation",
+        "repair",
+        "aging reversal"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Rejuvenation Hypothesis"
+    },
+    {
+      "Theory Name": "Metal Ion Hypothesis",
+      "Seed Keyword List": [
+        "metal ions",
+        "oxidative stress",
+        "damage"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Metal Ion Hypothesis"
+    },
+    {
+      "Theory Name": "Hypothalamic Inflammation Hypothesis",
+      "Seed Keyword List": [
+        "hypothalamus",
+        "inflammation",
+        "aging"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Hypothalamic Inflammation Hypothesis"
+    },
+    {
+      "Theory Name": "Amyloid-beta Neurodegeneration Hypothesis",
+      "Seed Keyword List": [
+        "amyloid-beta",
+        "neurodegeneration",
+        "brain aging"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Amyloid-beta Neurodegeneration Hypothesis"
+    },
+    {
+      "Theory Name": "Glucocorticoid Cascade Hypothesis",
+      "Seed Keyword List": [
+        "glucocorticoids",
+        "stress",
+        "brain aging"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Glucocorticoid Cascade Hypothesis"
+    },
+    {
+      "Theory Name": "Mitochondrial Oxidative Damage",
+      "Seed Keyword List": [
+        "free radicals",
+        "oxidative stress",
+        "mitochondria",
+        "ROS",
+        "damage"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Mitochondrial Oxidative Damage"
+    },
+    {
+      "Theory Name": "Chronological Aging Theory",
+      "Seed Keyword List": [
+        "chronology",
+        "biological age",
+        "time"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Chronological Aging Theory"
+    },
+    {
+      "Theory Name": "Aging Resilience Theory",
+      "Seed Keyword List": [
+        "resilience",
+        "adaptation",
+        "system robustness"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Aging Resilience Theory"
+    },
+    {
+      "Theory Name": "Seed-and-Soil Hypothesis",
+      "Seed Keyword List": [
+        "microenvironment",
+        "tissue niche",
+        "aging"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Seed-and-Soil Hypothesis"
+    },
+    {
+      "Theory Name": "Genetic-Damage Interaction Model",
+      "Seed Keyword List": [
+        "genetics",
+        "damage",
+        "homeostasis",
+        "system failure"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Genetic-Damage Interaction Model"
+    },
+    {
+      "Theory Name": "Insulin Signaling Theory",
+      "Seed Keyword List": [
+        "insulin",
+        "IGF-1",
+        "metabolic regulation"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Insulin Signaling Theory"
+    },
+    {
+      "Theory Name": "Participation Theory",
+      "Seed Keyword List": [
+        "social participation",
+        "activity",
+        "engagement"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Participation Theory"
+    },
+    {
+      "Theory Name": "Longevity Bottleneck Hypothesis",
+      "Seed Keyword List": [
+        "longevity",
+        "bottleneck",
+        "aging limit"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Longevity Bottleneck Hypothesis"
+    },
+    {
+      "Theory Name": "Microcirculatory Theory",
+      "Seed Keyword List": [
+        "microcirculation",
+        "vascular",
+        "aging"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Microcirculatory Theory"
+    },
+    {
+      "Theory Name": "Material Time Hypothesis",
+      "Seed Keyword List": [
+        "time",
+        "material",
+        "aging"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Material Time Hypothesis"
+    },
+    {
+      "Theory Name": "Adaptive Aging Theories",
+      "Seed Keyword List": [
+        "programmed",
+        "adaptation",
+        "survival"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Adaptive Aging Theories"
+    },
+    {
+      "Theory Name": "Klotho Aging Hypothesis",
+      "Seed Keyword List": [
+        "Klotho gene",
+        "longevity",
+        "anti-aging",
+        "molecular genetics"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Klotho Aging Hypothesis"
+    },
+    {
+      "Theory Name": "Five-Factor Aging Model",
+      "Seed Keyword List": [
+        "personality factors",
+        "biopsychosocial",
+        "aging traits"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Five-Factor Aging Model"
+    },
+    {
+      "Theory Name": "Invariant Aging Rate Hypothesis",
+      "Seed Keyword List": [
+        "biological clock",
+        "rate of aging",
+        "timing"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Invariant Aging Rate Hypothesis"
+    },
+    {
+      "Theory Name": "Viral Aging Hypothesis",
+      "Seed Keyword List": [
+        "virus",
+        "pathogen",
+        "infection",
+        "viral reactivation"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: Viral Aging Hypothesis"
+    },
+    {
+      "Theory Name": "emerging aging concepts (frailty, resilience, intrinsic capacity, functional integrity, social determinants)",
+      "Seed Keyword List": [
+        "frailty",
+        "resilience",
+        "intrinsic capacity",
+        "social determinants"
+      ],
+      "Theory Category": "Emerging/Novel",
+      "Sub-Category": "Discovered during normalization",
+      "Main Concepts": "Novel theory: emerging aging concepts (frailty, resilience, intrinsic capacity, functional integrity, social determinants)"
+    }
+  ]
+}

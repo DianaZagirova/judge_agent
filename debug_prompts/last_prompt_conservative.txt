@@ -1,0 +1,97 @@
+Map the 1 aging theories to standardized theory names from the provided list.
+
+#CRITICAL: You MUST provide EXACTLY 1 results in the EXACT same order as the numbered list below. Do not skip any entry.
+
+#INSTRUCTIONS:
+1. For EACH numbered theory (1 through 1), provide a result in the exact same order
+2. Copy the EXACT theory text as "initial_theory_name" - do not rephrase or modify it
+3. ONLY map if confidence is HIGH (7-10). If confidence is 6 or below, return null
+4. You can map to multiple theories if the text clearly mentions multiple distinct concepts
+5. ONLY use theory names that are in the "Available standardized names" list below
+6. If text is nonsense/unintelligible, return null
+7. MAINTAIN ORDER: Result position must match input position (entry 1 → result 1, entry 2 → result 2, etc.)
+
+#Available standardized names (USE ONLY THESE):
+- Mutation Accumulation Theory: mutation accumulation, deleterious mutations, late-acting, late-onset, selection shadow, harmful genes, detrimental effects, post-reproductive, postreproductive, late-life
+- Antagonistic Pleiotropy Theory: antagonistic pleiotropy, pleiotropic genes, pleiotropy, early beneficial effects, late deleterious effects, early-life benefits, late-life disadvantage, evolutionary trade-off, genetic trade-off, cost of reproduction
+- Disposable Soma Theory: disposable soma, somatic maintenance, somatic repair, resource allocation, energy allocation, trade-off, investment in offspring, unrepaired somatic damage, molecular proofreading, germ-soma
+- Phenoptosis (Group Selection): phenoptosis, programmed death, organismal death, adaptive death, altruistic aging, genetically determined, supra-individual selection, group selection, multilevel selection, good of the species
+- Evolvable Soma Theory: evolvable soma, post-reproductive experiments, evolvability, somatic evolution, adaptive aging, programmed, long-term adaptation
+- Pathogen Control Theory: pathogen control, pathogen burden, infectious diseases, chronic infections, kin selection, inclusive fitness, shorter lifespan, lifespan restriction, adaptive aging, programmed
+- Aging as a Spandrel: spandrel, evolutionary spandrel, architectural constraint, developmental constraint, non-adaptive byproduct, unavoidable consequence, stephen jay gould, richard lewontin, developmental programs, byproduct
+- Intergenerational Transfers Theory: intergenerational transfers, transfer effect, post-reproductive survival, inclusive fitness, resource flows, net transfers, ronald lee, hamilton's rule
+- Danaid Theory: danaid theory, unmaintainable, constraints on repair, information loss, diminishing returns, somatic decay, declining selection
+- Grandmother Hypothesis: grandmother hypothesis, post-reproductive lifespan, menopause, inclusive fitness, kin selection, grandmotherly assistance, alloparenting, kristen hawkes, intergenerational transfers
+- Free Radical/Oxidative Stress Theory: free radical theory, oxidative stress, oxidative damage, reactive oxygen species, ros, free radicals, oxidants, antioxidants, lipid peroxidation, denham harman
+- Somatic DNA Damage Theory: somatic dna damage, somatic mutation, genomic instability, dna lesions, dna damage, dna repair, mutations, genotoxic stress, chromosome abnormalities, leo szilard
+- Cross-Linking/Glycation Theory: cross-linking theory, glycation, advanced glycation end-products, ages, maillard reaction, protein cross-linking, collagen cross-linking, tissue stiffness, non-enzymatic glycosylation
+- Error Catastrophe Theory: error catastrophe, protein synthesis errors, translational fidelity, faulty proteins, error feedback loop, leslie orgel, rna protein synthesis
+- Protein Damage Theory: proteostasis, loss of proteostasis, protein homeostasis, protein damage, protein aggregation, misfolded proteins, protein quality control, chaperones, autophagy, ubiquitin proteasome system
+- Mitochondrial Decline Theory (MFRTA): mitochondrial decline, mitochondrial theory, mfrta, mitochondrial dysfunction, mtdna damage, vicious cycle, cellular respiration, energy decline, mitochondrial ros, bioenergetics
+- Membrane Theory of Aging: membrane theory of aging, membrane rigidity, membrane fluidity, lipid peroxidation, lipid composition, membrane proteins, cellular homeostasis
+- Waste Accumulation Theory: waste accumulation, garbage catastrophe, lipofuscin, age pigment, lysosomal dysfunction, autophagy impairment, metabolic waste, post-mitotic cells
+- Wear and Tear Theory: wear and tear, accumulated damage, internal stressors, external stressors, cellular damage, organ damage, august weismann
+- Replicative Senescence/Telomere Theory: replicative senescence, telomere theory, telomere shortening, hayflick limit, cell division, end replication problem, telomerase, growth arrest, leonard hayflick, alexey olovnikov
+- Programmed Longevity/Gene Regulation: programmed longevity, gene regulation, gerontogenes, aging genes, biological timetable, conserved pathways, insulin signaling, igf-1 pathway, tor pathway, sirtuins
+- Codon Restriction Theory: codon restriction, translational control, trna modification, protein synthesis, genetic program, codon usage
+- Neuroendocrine Theory: neuroendocrine theory, hormonal theory, hypothalamus, pituitary, biological clock, pacemaker of aging, hormonal feedback, homeostasis, vladimir dilman, caleb finch
+- Immunological Theory: immunological theory, immunosenescence, inflammaging, immune decline, thymic involution, adaptive immunity, innate immunity, chronic inflammation, t-cells, b-cells
+- Hyperfunction Theory: hyperfunction theory, quasi-program, developmental continuation, tor pathway, mtor, cellular hyperfunction, growth programs, purposeless continuation, mikhail blagosklonny
+- Developmental Theory of Aging (DTA): developmental theory of aging, dta, developmental inertia, late-life consequence, antagonistic pleiotropy mechanism, ontogenetic drift
+- Cellular Senescence: cellular senescence, senescent cells, sasp, senescence-associated secretory phenotype, growth arrest, p16ink4a, p21, senolytics, pro-inflammatory
+- Stem Cell Exhaustion: stem cell exhaustion, stem cell decline, adult stem cells, regenerative capacity, tissue maintenance, stem cell niche, hematopoietic stem cells, tissue regeneration
+- Dysdifferentiation Hypothesis: dysdifferentiation, cellular identity, transcriptional noise, epigenetic drift, loss of differentiation, cell fate, epigenetic control
+- Information Theory of Aging (ITOA): information theory of aging, itoa, epigenetic information, analog information, epigenetic noise, loss of information, chromatin regulators, dna repair, sirtuins, david sinclair
+- Epigenetic Damage/Drift Theory: epigenetic drift, epigenetic damage, epigenome, dna methylation, histone modification, epigenetic clocks, horvath clock, transcriptional noise, biomarkers of aging
+- Epigenetic Aging Clock's Theory: epigenetic clock
+- Loss of Morphostatic Information: morphostasis, morphostatic information, morphostatic defect, anatomical homeostasis, bioelectric signaling, developmental bioelectricity, epigenetic information, software of life, morphogenesis, information theory
+- Rate of Living Theory: rate of living, metabolic rate, vital energy, basal metabolic rate, energy expenditure, max rubner, raymond pearl
+- Energy Consumption Hypothesis: energy consumption hypothesis, total energy expenditure, metabolic rate, energy budget, lifetime energy expenditure
+- Dissipation/Thermodynamic Theory: thermodynamic theory, dissipative process, entropy, second law of thermodynamics, thermodynamic stability, self-organizing systems
+- Deprivation-Syndrome Theory: deprivation-syndrome, germ-soma conflict, death pathway, stress-resistance, deprivation response, reproductive phase
+- Hallmarks of Aging: hallmarks of aging, integrative framework, consensus model, genomic instability, telomere attrition, epigenetic alterations, loss of proteostasis, deregulated nutrient-sensing, mitochondrial dysfunction, cellular senescence
+- SENS: sens, strategies for engineered negligible senescence, engineered negligible senescence, damage repair, rejuvenation therapies, aubrey de grey, cell loss, death-resistant cells, nuclear mutations, mitochondrial mutations
+- Disengagement Theory: disengagement theory, mutual withdrawal, social withdrawal, reduced social involvement, role transition, functionalist, social stability, elaine cumming, william henry, adjustment to aging
+- Activity Theory: activity theory, active engagement, social participation, life satisfaction, maintaining interactions, role replacement, successful aging, robert havighurst, adjustment to aging
+- Continuity Theory: continuity theory, consistency, lifestyle, identity, internal structures, external structures, adaptive strategies, robert atchley, adjustment to aging
+- Modernization Theory: modernization theory, social status, industrialization, urbanization, devaluation of elderly, societal modernization, donald cowgill, lowell holmes
+- Age Stratification Theory: age stratification, age cohorts, age grades, social structure, life course, matilda white riley, age-related roles
+- Subculture Theory: subculture theory, aging subculture, group consciousness, shared interests, social integration, arnold rose
+- Person-Environment Fit Theory: person-environment fit, environmental press, personal competence, competence-press model, ecological theory of aging, powell lawton
+- Erikson's Eight Stages of Life: erikson's stages, psychosocial development, integrity vs despair, eight stages of man, ego integrity, life review, erik erikson
+- Peck's Expansion: peck's tasks, developmental tasks, ego differentiation, body transcendence, ego transcendence, robert peck
+- Jung's Theory of Individualism: jung's theory, individuation, self-realization, second half of life, archetypes, carl jung, inward focus
+- Selective Optimization with Compensation (SOC): selective optimization with compensation, soc model, successful aging, adaptive process, selection, optimization, compensation, paul baltes, margret baltes
+- Theories of Everyday Competence: everyday competence, instrumental activities of daily living, iadls, practical problem-solving, cognitive aging, independent living
+- Cognitive Slowing Hypothesis: cognitive slowing, processing speed, information processing, fluid cognition, cognitive decline, timothy salthouse
+- Plato's Theory of Aging: plato, philosophy of aging, pursuit of wisdom, freedom from desires
+- Aristotle's Theory of Aging: aristotle, natural illness, vital heat, loss of heat
+- Heidegger's 'Being-unto-death': heidegger, being-unto-death, finitude, mortality, authentic existence
+- Theory of Gerotranscendence: gerotranscendence, cosmic perspective, transcendence, developmental shift, life satisfaction, lars tornstam
+- Maslow's Hierarchy of Needs: maslow's hierarchy, hierarchy of needs, self-actualization, self-transcendence, human motivation, abraham maslow
+
+#Initial theories to map (process in order):     
+1. free radical theory of ageing
+
+#Output Format (JSON only, no markdown):
+#IMPORTANT: Return EXACTLY 1 entries in the results array, in the same order as above.
+{
+  "results": [
+    {
+      "initial_theory_name": "free radical theory",
+      "mapped_names": ["Free Radical/Oxidative Stress Theory"],
+      "confidence": [9]
+    },
+    {
+      "initial_theory_name": "mitochondrial and telomere theory",
+      "mapped_names": ["Mitochondrial Decline Theory (MFRTA)", "Replicative Senescence/Telomere Theory"],
+      "confidence": [9, 9]
+    },
+    {
+      "initial_theory_name": "very vague complete nonsense concept",
+      "mapped_names": null,
+      "confidence": null
+    }
+  ]
+}
+#Answer:
