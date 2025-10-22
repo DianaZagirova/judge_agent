@@ -2,6 +2,7 @@
 Process papers from the database using LLM judge with parallel processing.
 Enhanced version with robust logging, checkpointing, and error handling for large-scale runs.
 """
+import os
 import sqlite3
 import time
 import json
@@ -12,6 +13,10 @@ from datetime import datetime
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from typing import Dict, Optional, Tuple
 from pathlib import Path
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Add parent directory to path for imports
 sys.path.insert(0, str(Path(__file__).parent.parent))
@@ -19,22 +24,31 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from src.llm_judge import llm_judge
 
 # ============================================================================
-# CONFIGURATION
+# CONFIGURATION - Load from environment variables with defaults
 # ============================================================================
 
+# Base directory and paths
+BASE_DIR = Path(__file__).parent.parent
+DATA_DIR = BASE_DIR / 'data'
+LOG_DIR = Path(os.getenv('LOG_DIR', BASE_DIR / 'logs'))
+
 # Database paths
-PAPERS_DB_PATH = "/home/diana.z/hack/download_papers_pubmed/paper_collection/data/papers.db"
-RESULTS_DB_PATH = "/home/diana.z/hack/llm_judge/data/evaluations.db"
-LOG_FILE = "/home/diana.z/hack/llm_judge/logs/processing.log"
+PAPERS_DB_PATH = Path(os.getenv('PAPERS_DB_PATH', DATA_DIR / 'papers.db'))
+RESULTS_DB_PATH = Path(os.getenv('RESULTS_DB_PATH', DATA_DIR / 'evaluations.db'))
+LOG_FILE = LOG_DIR / 'processing.log'
+
+# Ensure directories exist
+DATA_DIR.mkdir(exist_ok=True)
+LOG_DIR.mkdir(exist_ok=True)
 
 # Pricing for Azure OpenAI (update with actual pricing)
-COST_PER_1K_PROMPT_TOKENS = 0.0004  
-COST_PER_1K_COMPLETION_TOKENS = 0.0016
+COST_PER_1K_PROMPT_TOKENS = float(os.getenv('COST_PER_1K_PROMPT_TOKENS', '0.0004'))
+COST_PER_1K_COMPLETION_TOKENS = float(os.getenv('COST_PER_1K_COMPLETION_TOKENS', '0.0016'))
 
 # Processing config
-MAX_WORKERS = 10
-CHECKPOINT_INTERVAL = 50  # Save progress summary every N papers
-PROGRESS_LOG_INTERVAL = 10  # Log progress every N papers
+MAX_WORKERS = int(os.getenv('MAX_WORKERS', '10'))
+CHECKPOINT_INTERVAL = int(os.getenv('CHECKPOINT_INTERVAL', '50'))  # Save progress summary every N papers
+PROGRESS_LOG_INTERVAL = int(os.getenv('PROGRESS_LOG_INTERVAL', '10'))  # Log progress every N papers
 
 # Global flag for graceful shutdown
 shutdown_requested = False
@@ -45,8 +59,8 @@ shutdown_requested = False
 
 def setup_logging():
     """Configure logging with both file and console output."""
-    log_dir = Path(LOG_FILE).parent
-    log_dir.mkdir(parents=True, exist_ok=True)
+    # Ensure log directory exists
+    LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
     
     # Create logger
     logger = logging.getLogger('paper_processor')
@@ -76,6 +90,13 @@ def setup_logging():
     logger.addHandler(file_handler)
     logger.addHandler(console_handler)
     
+    # Log configuration at startup
+    logger.info(f"Starting paper processor with configuration:")
+    logger.info(f"  Papers DB: {PAPERS_DB_PATH.absolute()}")
+    logger.info(f"  Results DB: {RESULTS_DB_PATH.absolute()}")
+    logger.info(f"  Log file: {LOG_FILE.absolute()}")
+    logger.info(f"  Max workers: {MAX_WORKERS}")
+    
     return logger
 
 logger = setup_logging()
@@ -98,6 +119,49 @@ signal.signal(signal.SIGTERM, signal_handler)
 # ============================================================================
 # DATABASE FUNCTIONS
 # ============================================================================
+
+def validate_runtime() -> Tuple[bool, list]:
+    """Validate required environment, files, and configuration."""
+    errors = []
+    try:
+        if not PAPERS_DB_PATH.exists():
+            errors.append(f"PAPERS_DB_PATH not found: {PAPERS_DB_PATH}")
+        else:
+            conn = sqlite3.connect(PAPERS_DB_PATH)
+            cur = conn.cursor()
+            cur.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='papers'")
+            if cur.fetchone() is None:
+                errors.append("'papers' table not found in PAPERS_DB_PATH")
+            else:
+                cur.execute("PRAGMA table_info(papers)")
+                cols = {r[1] for r in cur.fetchall()}
+                required = {"doi", "pmid", "title", "abstract"}
+                missing = required - cols
+                if missing:
+                    errors.append(f"'papers' table missing columns: {', '.join(sorted(missing))}")
+            conn.close()
+    except Exception as e:
+        errors.append(f"Failed to inspect PAPERS_DB_PATH: {e}")
+
+    use_module = os.getenv("USE_MODULE", "openai").lower()
+    if use_module == "azure":
+        if not os.getenv("AZURE_OPENAI_ENDPOINT"):
+            errors.append("AZURE_OPENAI_ENDPOINT is not set")
+        if not os.getenv("AZURE_OPENAI_API_KEY"):
+            errors.append("AZURE_OPENAI_API_KEY is not set")
+        if not os.getenv("AZURE_OPENAI_API_VERSION"):
+            errors.append("AZURE_OPENAI_API_VERSION is not set")
+    else:
+        if not os.getenv("OPENAI_API_KEY"):
+            errors.append("OPENAI_API_KEY is not set")
+
+    try:
+        LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
+        RESULTS_DB_PATH.parent.mkdir(parents=True, exist_ok=True)
+    except Exception as e:
+        errors.append(f"Failed to create output directories: {e}")
+
+    return (len(errors) == 0, errors)
 
 def init_results_database():
     """Initialize the results database with necessary tables."""
@@ -465,6 +529,14 @@ def process_papers_parallel(limit: Optional[int] = None, max_workers: int = MAX_
     logger.info(f"Limit: {limit if limit else 'ALL PAPERS'}")
     logger.info(f"Log file: {LOG_FILE}")
     logger.info(f"Results DB: {RESULTS_DB_PATH}")
+
+    # Validate runtime environment before proceeding
+    ok, errs = validate_runtime()
+    if not ok:
+        logger.error("Runtime validation failed. Please fix the following issues:")
+        for e in errs:
+            logger.error(f" - {e}")
+        return
     
     # Initialize database
     if not init_results_database():

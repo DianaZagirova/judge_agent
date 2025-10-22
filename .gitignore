@@ -56,9 +56,13 @@ processing_tracker.db**
 
 
 #main data
-evaluations.db
-data/
+# evaluations.db
+# data/
 
 #test results
 output/
 normalization_output/
+legacy/
+data/evaluations.db
+data/database_backup
+data/json_export

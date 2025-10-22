@@ -1,0 +1,112 @@
+[
+  {
+    "timestamp": "2025-10-22T22:33:14.548161",
+    "paper_info": {
+      "doi": "10.3390/membranes10100299",
+      "pmid": "33096926",
+      "title": "Regulation of Cell Death by Mitochondrial Transport Systems of Calcium and Bcl-2 Proteins.",
+      "abstract": "Mitochondria represent the fundamental system for cellular energy metabolism, by not only supplying energy in the form of ATP, but also by affecting physiology and cell death via the regulation of calcium homeostasis and the activity of Bcl-2 proteins. A lot of research has recently been devoted to understanding the interplay between Bcl-2 proteins, the regulation of these interactions within the cell, and how these interactions lead to the changes in calcium homeostasis. However, the role of Bcl-2 proteins in the mediation of mitochondrial calcium homeostasis, and therefore the induction of cell death pathways, remain underestimated and are still not well understood. In this review, we first summarize our knowledge about calcium transport systems in mitochondria, which, when miss-regulated, can induce necrosis. We continue by reviewing and analyzing the functions of Bcl-2 proteins in apoptosis. Finally, we link these two regulatory mechanisms together, exploring the interactions between the mitochondrial Ca<sup>2+</sup> transport systems and Bcl-2 proteins, both capable of inducing cell death, with the potential to determine the cell death pathway-either the apoptotic or the necrotic one."
+    },
+    "classification": "not_valid",
+    "aging_theory": null,
+    "type": "review",
+    "reasoning": "The paper focuses on the regulation of cell death through mitochondrial calcium transport systems and Bcl-2 proteins. While it discusses mechanisms related to cell death, it does not propose or review general theories of aging or provide a generalizable explanation for biological aging processes.",
+    "confidence_score": 8,
+    "tokens": {
+      "prompt_tokens": 1442,
+      "completion_tokens": 90,
+      "total_tokens": 1532
+    },
+    "cost": 0.0007208000000000001,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2025-10-22T22:33:14.548171",
+    "paper_info": {
+      "doi": "10.4161/cc.28433",
+      "pmid": "24603410",
+      "title": "Genetics and epigenetics of aging and longevity.",
+      "abstract": "Evolutionary theories of aging predict the existence of certain genes that provide selective advantage early in life with adverse effect on lifespan later in life (antagonistic pleiotropy theory) or longevity insurance genes (disposable soma theory). Indeed, the study of human and animal genetics is gradually identifying new genes that increase lifespan when overexpressed or mutated: gerontogenes. Furthermore, genetic and epigenetic mechanisms are being identified that have a positive effect on longevity. The gerontogenes are classified as lifespan regulators, mediators, effectors, housekeeping genes, genes involved in mitochondrial function, and genes regulating cellular senescence and apoptosis. In this review we demonstrate that the majority of the genes as well as genetic and epigenetic mechanisms that are involved in regulation of longevity are highly interconnected and related to stress response."
+    },
+    "classification": "valid",
+    "aging_theory": "antagonistic pleiotropy theory, disposable soma theory",
+    "type": "review",
+    "reasoning": "The paper discusses evolutionary theories of aging, specifically antagonistic pleiotropy and disposable soma theories, while reviewing genetic and epigenetic mechanisms related to aging and longevity. It aims to synthesize knowledge about how certain genes influence lifespan, which aligns with aging theory.",
+    "confidence_score": 9,
+    "tokens": {
+      "prompt_tokens": 1359,
+      "completion_tokens": 101,
+      "total_tokens": 1460
+    },
+    "cost": 0.0007052,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2025-10-22T22:33:14.548175",
+    "paper_info": {
+      "doi": "10.14336/AD.2024.0126",
+      "pmid": "38377031",
+      "title": "Role and Mechanism of Epigenetic Regulation in the Aging of Germ Cells: Prospects for Targeted Interventions.",
+      "abstract": "In modern times, a notable trend toward delayed childbearing has been observed in most developed countries. As a result, sperm aging and quality loss, as well as premature ovarian failure (POF), have emerged as major causes of infertility. The pathogenesis of sperm aging and POF is complex and has not been clearly elucidated. However, evidence from some studies has linked germ cell aging to epigenetic modifications. Epigenetics refers to the heritable changes in gene expression that occur in the absence of any alterations to the gene's nucleotide sequence. This paper systematically reviewed and analyzed the relevant literature to describe the relationship of DNA methylation, non-coding RNA regulation, histone modifications, chromatin remodeling, and RNA modifications with sperm aging and POF. In addition, we analyzed how sperm aging and POF can be mitigated via epigenetic interventions. This review could provide new therapeutic insights and guide strategies for improving sperm quality and ovarian function."
+    },
+    "classification": "not_valid",
+    "aging_theory": null,
+    "type": "review",
+    "reasoning": "The paper reviews the role of epigenetic regulation in germ cell aging, specifically sperm aging and premature ovarian failure (POF). While it discusses epigenetic modifications and their implications for aging in germ cells, it primarily focuses on specific mechanisms and interventions rather than proposing or discussing a general theory of aging applicable to the whole organism. Therefore, it does not meet the criteria for aging theory-related articles.",
+    "confidence_score": 8,
+    "tokens": {
+      "prompt_tokens": 1399,
+      "completion_tokens": 119,
+      "total_tokens": 1518
+    },
+    "cost": 0.00075,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2025-10-22T22:33:14.548177",
+    "paper_info": {
+      "doi": "10.1016/j.jalz.2011.03.005",
+      "pmid": "21514250",
+      "title": "The diagnosis of dementia due to Alzheimer's disease: recommendations from the National Institute on Aging-Alzheimer's Association workgroups on diagnostic guidelines for Alzheimer's disease.",
+      "abstract": "The National Institute on Aging and the Alzheimer's Association charged a workgroup with the task of revising the 1984 criteria for Alzheimer's disease (AD) dementia. The workgroup sought to ensure that the revised criteria would be flexible enough to be used by both general healthcare providers without access to neuropsychological testing, advanced imaging, and cerebrospinal fluid measures, and specialized investigators involved in research or in clinical trial studies who would have these tools available. We present criteria for all-cause dementia and for AD dementia. We retained the general framework of probable AD dementia from the 1984 criteria. On the basis of the past 27 years of experience, we made several changes in the clinical criteria for the diagnosis. We also retained the term possible AD dementia, but redefined it in a manner more focused than before. Biomarker evidence was also integrated into the diagnostic formulations for probable and possible AD dementia for use in research settings. The core clinical criteria for AD dementia will continue to be the cornerstone of the diagnosis in clinical practice, but biomarker evidence is expected to enhance the pathophysiological specificity of the diagnosis of AD dementia. Much work lies ahead for validating the biomarker diagnosis of AD dementia."
+    },
+    "classification": "not_valid",
+    "aging_theory": null,
+    "type": "discussion",
+    "reasoning": "The paper focuses on revising diagnostic criteria for Alzheimer's disease dementia and discusses clinical and biomarker criteria, but it does not propose or review general theories of aging. It is primarily concerned with diagnostic guidelines rather than causal explanations for aging.",
+    "confidence_score": 9,
+    "tokens": {
+      "prompt_tokens": 1454,
+      "completion_tokens": 85,
+      "total_tokens": 1539
+    },
+    "cost": 0.0007176000000000001,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2025-10-22T22:33:14.548179",
+    "paper_info": {
+      "doi": "10.1093/geront/29.2.183",
+      "pmid": "2519525",
+      "title": "A continuity theory of normal aging.",
+      "abstract": "Continuity Theory holds that, in making adaptive choices, middle-aged and older adults attempt to preserve and maintain existing internal and external structures; and they prefer to accomplish this objective by using strategies tied to their past experiences of themselves and their social world. Change is linked to the person's perceived past, producing continuity in inner psychological characteristics as well as in social behavior and in social circumstances. Continuity is thus a grand adaptive strategy that is promoted by both individual preference and social approval."
+    },
+    "classification": "valid",
+    "aging_theory": "Continuity Theory",
+    "type": "discussion",
+    "reasoning": "The abstract discusses the Continuity Theory of aging, which is a recognized psychosocial theory that explains aging processes in terms of maintaining continuity in behavior and social circumstances based on past experiences. This aligns with the criteria for aging theory as it provides a general explanation for aging.",
+    "confidence_score": 9,
+    "tokens": {
+      "prompt_tokens": 1285,
+      "completion_tokens": 94,
+      "total_tokens": 1379
+    },
+    "cost": 0.0006644,
+    "success": true,
+    "error": null
+  }
+]

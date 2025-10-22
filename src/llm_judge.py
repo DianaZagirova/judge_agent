@@ -10,15 +10,15 @@ load_env()
 
 USE_MODULE = os.getenv("USE_MODULE")
 # Azure OpenAI Configuration
-AZURE_OPENAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT")
-AZURE_OPENAI_API_KEY = os.getenv("AZURE_OPENAI_API_KEY")
-AZURE_OPENAI_API_VERSION = os.getenv("AZURE_OPENAI_API_VERSION")
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+AZURE_OPENAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT", "")
+AZURE_OPENAI_API_KEY = os.getenv("AZURE_OPENAI_API_KEY", "")
+AZURE_OPENAI_API_VERSION = os.getenv("AZURE_OPENAI_API_VERSION", "")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
 
 OPENAI_MODEL = "gpt-4.1-mini"
-RETRIES = 5  # Increased for rate limit handling
-BASE_DELAY = 1.4  # Base delay between requests (seconds)
-RATE_LIMIT_WAIT = 3.0  # Wait time for rate limit errors (seconds)
+RETRIES = 3  # Reduced for demo - less aggressive retries
+BASE_DELAY = 0.5  # Reduced base delay for demo
+RATE_LIMIT_WAIT = 1.5  # Reduced wait time for demo
 
 # Initialize Azure OpenAI client
 if USE_MODULE == "azure":
@@ -63,14 +63,14 @@ def llm_judge(jointtext: str, retries= RETRIES) -> dict:
             }
             
             # Small delay after successful request to avoid rate limits
-            time.sleep(BASE_DELAY + random.uniform(0, 0.5))
+            time.sleep(BASE_DELAY + random.uniform(0, 0.2))
             return result
             
         except RateLimitError as e:
             # Handle rate limit errors with exponential backoff
             n += 1
-            wait_time = RATE_LIMIT_WAIT * (2 ** (n - 1)) + random.uniform(0, 1)  # Exponential backoff with jitter
-            print(f"Rate limit hit (attempt {n}/{retries}); waiting {wait_time:.1f}s before retry...")
+            wait_time = RATE_LIMIT_WAIT * (2 ** (n - 1)) + random.uniform(0, 0.5)  # Exponential backoff with jitter
+            print(f"⏳ API rate limit - waiting {wait_time:.1f}s before retry...")
             if n < retries:
                 time.sleep(wait_time)
             else:
