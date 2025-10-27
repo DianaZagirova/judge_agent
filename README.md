@@ -146,6 +146,26 @@ Here's a real example from `data/example_evaluations.json` showing a paper class
     "revision": null
   },
   {
+    "doi": "10.1371/journal.pone.0311159",
+    "pmid": "39841657",
+    "title": "Muscular TOR knockdown and endurance exercise ameliorate high salt and age-related skeletal muscle degradation by activating the MTOR-mediated pathway.",
+    "result": "doubted",
+    "aging_theory": "MTOR signaling pathway related to aging",
+    "type": "research",
+    "reasoning": "The paper investigates the role of the TOR gene and MTOR-mediated pathways in skeletal muscle aging and degradation, particularly under high salt diet and exercise conditions. While it focuses on a specific gene and pathway in muscle tissue, it discusses mechanisms related to cellular aging and the modulation of aging-related muscle degradation, which ties into general aging processes. However, the focus is somewhat narrow on muscle and specific pathways without explicit claims of general aging theory or broad causal mechanisms beyond muscle aging.",
+    "confidence_score": 5,
+    "prompt_tokens": 1526,
+    "completion_tokens": 139,
+    "total_tokens": 1665,
+    "cost_usd": 0.0008328000000000001,
+    "processing_time_seconds": 4.4656150341033936,
+    "success": 1,
+    "error_message": null,
+    "timestamp": "2025-10-19T08:12:10.527315",
+    "model_used": "gpt-4.1-mini",
+    "revision": null
+  },
+  {
     "doi": "10.1046/j.1365-2540.1999.00544.x",
     "pmid": "10383679",
     "title": "The evolutionary genetics of ageing and longevity.",
@@ -169,25 +189,68 @@ Here's a real example from `data/example_evaluations.json` showing a paper class
 
 **Field-by-Field Breakdown:**
 
-- **`doi`** & **`pmid`**: Unique identifiers linking to the original paper in scientific databases
-- **`title`**: The paper compares two theoretical frameworks ("wear and tear" vs "use it or lose it") for brain aging
-- **`result: "valid"`**: The LLM classified this as relevant to aging theory (other options: `not_valid`, `doubted`)
-- **`aging_theory: "use it or lose it principle"`**: The LLM identified the specific aging theory discussed in the paper
-- **`type: "discussion"`**: Categorized as a discussion paper (other types: `research`, `review`, `meta-analysis`, etc.)
-- **`reasoning`**: The LLM's explanation for why this paper is valid - it proposes general causal explanations for brain aging mechanisms, not just disease-specific findings
-- **`confidence_score: 8`**: High confidence (8/10) in the classification decision
-- **`prompt_tokens: 1350`**: Input size - the paper's title and abstract consumed 1,350 tokens
-- **`completion_tokens: 101`**: Output size - the LLM's response used 101 tokens
-- **`total_tokens: 1451`**: Combined token usage for cost calculation
-- **`cost_usd: 0.0007016`**: Actual API cost for this single paper (~$0.0007 or 0.07 cents)
-- **`processing_time_seconds: 3.37`**: Total time including API call, retry logic, and parsing
-- **`success: 1`**: Processing completed successfully without errors
-- **`error_message: null`**: No errors encountered (would contain error details if `success: 0`)
-- **`timestamp`**: Processed on October 19, 2025 at 10:10 AM UTC
-- **`model_used: "gpt-4.1-mini"`**: The specific LLM model used for classification
-- **`revision: null`**: No specific prompt revision tracked (used for A/B testing different prompts)
+- **`doi`** & **`pmid`**: Unique identifiers linking to the original paper in scientific databases (e.g., DOI for journal access, PMID for PubMed)
 
-This example demonstrates how the system identifies papers that propose or discuss general aging theories (valid) versus papers that only study age-related phenomena without theoretical frameworks (not_valid).
+- **`title`**: Full paper title showing the research focus
+  - Example 1: "Biological Hallmarks of Cancer in Alzheimer's Disease" - disease-specific focus
+  - Example 2: "Muscular TOR knockdown..." - specific pathway in muscle aging
+  - Example 3: "The evolutionary genetics of ageing and longevity" - clearly theoretical
+
+- **`result`**: Primary classification outcome with three possible values:
+  - **`"not_valid"`** (Example 1): Paper focuses on disease-specific pathogenesis without proposing general aging theories
+  - **`"doubted"`** (Example 2): Uncertain classification - discusses aging-related mechanisms but focus is narrow (specific gene/pathway)
+  - **`"valid"`** (Example 3): Paper reviews or proposes general causal theories of aging
+
+- **`aging_theory`**: Specific aging theory mentioned in the paper
+  - `null` for not_valid papers (Example 1)
+  - Identified even for doubted papers if present (Example 2: "MTOR signaling pathway related to aging")
+  - Detailed for valid papers (Example 3: "Evolutionary theories of ageing (mutation accumulation, declining force of natural selection)")
+
+- **`type`**: Paper type classification
+  - `"review"` - Reviews existing literature (Examples 1 & 3)
+  - `"research"` - Original research study (Example 2)
+  - Other types: `"discussion"`, `"meta-analysis"`, `"other"`
+
+- **`reasoning`**: Detailed LLM explanation for the classification decision
+  - **Not_valid** (Example 1): Explains why the paper is disease-specific without general aging theory
+  - **Doubted** (Example 2): Acknowledges aging-related content but notes narrow focus, leading to uncertainty
+  - **Valid** (Example 3): Confirms the paper reviews general evolutionary theories of aging
+
+- **`confidence_score`**: Numerical confidence (0-10 scale) in the classification
+  - `9` for not_valid (Example 1) - high certainty it's not about aging theory
+  - `5` for doubted (Example 2) - low confidence indicates uncertainty
+  - `10` for valid (Example 3) - maximum certainty it's about aging theory
+
+- **`prompt_tokens`**: Number of input tokens (title + abstract sent to LLM)
+  - Ranges from ~1,400-1,500 tokens depending on abstract length
+
+- **`completion_tokens`**: Number of output tokens (LLM's response)
+  - Varies by reasoning complexity: 88-139 tokens in these examples
+
+- **`total_tokens`**: Sum of prompt and completion tokens used for cost calculation
+
+- **`cost_usd`**: Actual API cost in USD for processing this single paper
+  - Ranges from $0.00016 to $0.00083 (~0.02 to 0.08 cents per paper)
+  - Cost varies based on abstract length and response complexity
+
+- **`processing_time_seconds`**: Total processing time including API call, retry logic, and parsing
+  - Ranges from 3.5 to 5.3 seconds per paper
+
+- **`success: 1`**: Boolean flag indicating successful processing (0 would indicate failure)
+
+- **`error_message: null`**: No errors encountered (would contain error details if `success: 0`)
+
+- **`timestamp`**: ISO 8601 timestamp showing when the paper was processed
+
+- **`model_used: "gpt-4.1-mini"`**: The specific LLM model used for classification
+
+- **`revision: null`**: Optional field for tracking prompt or system revisions (used for A/B testing different prompts)
+
+**Key Insights from Examples:**
+
+- **Example 1 (not_valid)**: Shows how disease-specific papers (cancer + Alzheimer's) are filtered out even when they mention aging-related topics
+- **Example 2 (doubted)**: Demonstrates the system's ability to flag uncertain cases - papers with aging-related content but narrow focus requiring manual review
+- **Example 3 (valid)**: Clear case of a paper reviewing general evolutionary theories of aging with maximum confidence score
 
 ---
 
