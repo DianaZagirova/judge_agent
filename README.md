@@ -21,7 +21,17 @@ This stage focuses on **rapidly identifying and filtering aging-theory-related p
    - Extracted full texts and collected detailed metadata for these papers.
    [Stage 2 repo](https://github.com/DianaZagirova/scihub_api)
 3. **Stage 3 (this repo):**
-   - Implements a **fast, AI-powered filtering system** to exclude not relevant papers from the large candidate set.
+   - Implements a **fast, AI-powered filtering system** to exclude not relevant papers from the large candidate set.   
+   [Stage 3 repo](https://github.com/DianaZagirova/judge_agent)
+
+> **Note on System Architecture**: While numbered 1-2-3 for simplicity, these stages are not truly sequential. Instead, the system operates as a **self-updating pipeline** with automated background processes:
+> 
+> 1. **Keyword Generation**: An LLM generates new search keywords
+> 2. **Paper Discovery ([Stage 1](https://github.com/DianaZagirova/download_agent))**: These keywords are executed as searches, and newly discovered papers are added to `papers.db`
+> 3. **Automatic Evaluation ([Stage 3](https://github.com/DianaZagirova/judge_agent))**: A background script monitors `papers.db` for updates and automatically triggers LLM-based evaluations, storing classification results in `evaluations.db`
+> 4. **Selective Full-Text Extraction ([Stage 2](https://github.com/DianaZagirova/scihub_api))**: When papers classified as "valid" or "doubted" appear in `evaluations.db`, the background script automatically initiates full-text extraction for only these relevant papers
+> 
+> This architecture creates a continuously running, self-updating system that efficiently prioritizes resources by extracting full texts only for papers that pass the initial relevance filter.
 
 
 ### 📊 Results
