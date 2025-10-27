@@ -120,6 +120,75 @@ Each paper evaluation contains the following fields extracted from the LLM judge
 - `model_used`: LLM model identifier (e.g., `gpt-4.1-mini`)
 - `revision`: Optional field for tracking prompt or system revisions
 
+#### Example Evaluation
+
+Here's a real example from `data/example_evaluations.json` showing a paper classified as **valid** (relevant to aging theory) and **not_valid** (not relevant to aging theory) :
+
+```json
+{
+    "doi": "10.1007/s12035-019-1591-5",
+    "pmid": "30993533",
+    "title": "Biological Hallmarks of Cancer in Alzheimer's Disease.",
+    "result": "not_valid",
+    "aging_theory": null,  
+    "type": "review",
+    "reasoning": "The paper reviews the overlap between biological hallmarks of cancer and Alzheimer's disease, focusing on shared and inversely regulated mechanisms. While it discusses disease heterogeneity and common pathways, it does not propose or test a general theory of aging or causal explanations for aging itself. The focus is on disease-specific pathogenesis and therapeutic implications rather than general aging theory.",
+    "confidence_score": 9,
+    "prompt_tokens": 1492,
+    "completion_tokens": 109,
+    "total_tokens": 1601,
+    "cost_usd": 0.00017099999999999998,
+    "processing_time_seconds": 3.581165075302124,
+    "success": 1,
+    "error_message": null,
+    "timestamp": "2025-10-16T21:09:00.791378",
+    "model_used": "gpt-4.1-mini",
+    "revision": null
+  },
+  {
+    "doi": "10.1046/j.1365-2540.1999.00544.x",
+    "pmid": "10383679",
+    "title": "The evolutionary genetics of ageing and longevity.",
+    "result": "valid",
+    "aging_theory": "Evolutionary theories of ageing (mutation accumulation, declining force of natural selection)",
+    "type": "review",
+    "reasoning": "The paper reviews evolutionary theories of aging, discussing natural selection's declining efficacy with age, mutation accumulation, and species longevity, and addresses adjustments to these models based on recent data.",
+    "confidence_score": 10,
+    "prompt_tokens": 1395,
+    "completion_tokens": 88,
+    "total_tokens": 1483,
+    "cost_usd": 0.0001571,
+    "processing_time_seconds": 5.274806976318359,
+    "success": 1,
+    "error_message": null,
+    "timestamp": "2025-10-17T04:01:39.533874",
+    "model_used": "gpt-4.1-mini",
+    "revision": null
+  }
+```
+
+**Field-by-Field Breakdown:**
+
+- **`doi`** & **`pmid`**: Unique identifiers linking to the original paper in scientific databases
+- **`title`**: The paper compares two theoretical frameworks ("wear and tear" vs "use it or lose it") for brain aging
+- **`result: "valid"`**: The LLM classified this as relevant to aging theory (other options: `not_valid`, `doubted`)
+- **`aging_theory: "use it or lose it principle"`**: The LLM identified the specific aging theory discussed in the paper
+- **`type: "discussion"`**: Categorized as a discussion paper (other types: `research`, `review`, `meta-analysis`, etc.)
+- **`reasoning`**: The LLM's explanation for why this paper is valid - it proposes general causal explanations for brain aging mechanisms, not just disease-specific findings
+- **`confidence_score: 8`**: High confidence (8/10) in the classification decision
+- **`prompt_tokens: 1350`**: Input size - the paper's title and abstract consumed 1,350 tokens
+- **`completion_tokens: 101`**: Output size - the LLM's response used 101 tokens
+- **`total_tokens: 1451`**: Combined token usage for cost calculation
+- **`cost_usd: 0.0007016`**: Actual API cost for this single paper (~$0.0007 or 0.07 cents)
+- **`processing_time_seconds: 3.37`**: Total time including API call, retry logic, and parsing
+- **`success: 1`**: Processing completed successfully without errors
+- **`error_message: null`**: No errors encountered (would contain error details if `success: 0`)
+- **`timestamp`**: Processed on October 19, 2025 at 10:10 AM UTC
+- **`model_used: "gpt-4.1-mini"`**: The specific LLM model used for classification
+- **`revision: null`**: No specific prompt revision tracked (used for A/B testing different prompts)
+
+This example demonstrates how the system identifies papers that propose or discuss general aging theories (valid) versus papers that only study age-related phenomena without theoretical frameworks (not_valid).
+
 ---
 
 ## 🚀 Production Usage
